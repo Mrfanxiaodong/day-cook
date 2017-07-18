@@ -1,3 +1,56 @@
-page-contact {
-
+.lunbotu{
+  height: 133px;
+}
+h4{
+  margin-left: 20px;
+}
+h4 ion-icon{
+  margin-right: 10px;
+}
+.col-one{
+  text-align: center;
+  line-height: 40px;
+  height: 40px;
+}
+.p-yxzt{
+  font-weight: bold;
+  font-size: 15px;
+  line-height: 8px;
+}
+.card{
+  width: 120px;
+  height: 150px;
+  border:none;
+}
+.card img{
+  width: 100px;
+  height: 100px;
+}
+.huadong ul{
+  list-style: none;
+  width: 700px;
+  overflow: hidden;
+  padding: 0;
+  overflow:scroll;
+}
+.huadong ul li{
+  float: left;
+  margin-left: 10px;
+}
+.huadong ul li img{
+  width: 100px;
+  height: 100px;
+}
+.huadong ul li p{
+  width: 100px;
+  text-align: center;
+  margin: 0px;
+  font-size: 15px;
+}
+.huadong ul li p del{
+  font-size: 6px;
+}
+.huadong ul li ion-icon{
+  margin-top: 60px;
+  margin-left: 45px;
 }

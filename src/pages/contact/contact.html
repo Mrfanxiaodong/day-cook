@@ -1,17 +1,82 @@
 <ion-header>
   <ion-navbar>
     <ion-title>
-      Contact
+      优选
     </ion-title>
   </ion-navbar>
 </ion-header>
 
 <ion-content>
-  <ion-list>
-    <ion-list-header>Follow us on Twitter</ion-list-header>
-    <ion-item>
-      <ion-icon name="ionic" item-left></ion-icon>
-      @ionicframework
-    </ion-item>
-  </ion-list>
+  <!--轮播图-->
+  <ion-slides autoplay="3000" loop=true class="lunbotu">
+    <ion-slide>
+      <h1><img src="http://pic.daydaycook.com/production/images/20170714/6a3fffbd-bc1d-403d-8f98-94ff53c3a879" alt=""></h1>
+    </ion-slide>
+    <ion-slide>
+      <h1><img src="http://pic.daydaycook.com/production/images/20170714/3094bf7b-d159-4812-bf17-984ede21b60c" alt=""></h1>
+    </ion-slide>
+    <ion-slide>
+      <h1><img src="http://pic.daydaycook.com/production/images/20170714/6a3fffbd-bc1d-403d-8f98-94ff53c3a879" alt=""></h1>
+    </ion-slide>
+  </ion-slides>
+
+  <!--ion-grid-->
+  <ion-grid style="padding: 0">
+    <ion-row>
+      <ion-col col-1 class="col-one">
+        <ion-icon ios="logo-buffer"></ion-icon>
+      </ion-col>
+      <ion-col col-3 class="col-two">
+        <p class="p-yxzt">优选专题</p>
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col col-12 style="padding: 0">
+        <img src="http://pic.daydaycook.com/production/images/20170714/752358b2-3000-4db5-86db-bc2752feb66b" alt="">
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+
+  <!--ion-card-->
+  <div class="huadong" style="overflow-x: auto">
+    <ul>
+      <li>
+          <img src="../../assets/icon/mugua.png"/>
+              <p style="font-size: 10px;">海南红心木瓜</p>
+        <p style="color: red;">￥19.9 <del style="color: gray;">￥29.9</del></p>
+      </li>
+      <li>
+        <img src="../../assets/icon/putao.png"/>
+        <p style="font-size: 10px;">海南红心木瓜</p>
+        <p style="color: red;">￥19.9 <del style="color: gray;">￥29.9</del></p>
+      </li>
+      <li>
+        <img src="../../assets/icon/huolongguo.png"/>
+        <p style="font-size: 10px;">海南红心木瓜</p>
+        <p style="color: red;">￥19.9 <del style="color: gray;">￥29.9</del></p>
+      </li>
+      <li>
+        <img src="../../assets/icon/chengzi.png"/>
+        <p style="font-size: 10px;">海南红心木瓜</p>
+        <p style="color: red;">￥19.9 <del style="color: gray;">￥29.9</del></p>
+      </li>
+      <li>
+        <img src="../../assets/icon/xiyou.png"/>
+        <p style="font-size: 10px;">海南红心木瓜</p>
+        <p style="color: red;">￥19.9 <del style="color: gray;">￥29.9</del></p>
+      </li>
+      <li>
+        <ion-icon ios="ios-arrow-round-forward" md="md-arrow-round-forward"></ion-icon>
+        <p style="font-size: 10px;">查看更多</p>
+      </li>
+    </ul>
+  </div>
+
+
+
+
+
+
+
 </ion-content>
+
