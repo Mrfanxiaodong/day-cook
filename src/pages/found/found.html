@@ -8,6 +8,7 @@
 
   <ion-navbar>
     <ion-title>发现</ion-title>
+    <h3> <ion-icon ios="ios-search" md="md-search"></ion-icon></h3>
   </ion-navbar>
 
 </ion-header>
@@ -39,21 +40,11 @@
       <div class="box">
         <ul>
           <li>
-            <a href=""><ion-card>
+            <a (click)="founder()"><ion-card>
               <img src="../assets/found_1.png"/>
               <ion-card-content>
                 <ion-card-title>
                   深夜撸串故事
-                </ion-card-title>
-              </ion-card-content>
-            </ion-card></a>
-          </li>
-          <li>
-            <a href=""> <ion-card>
-              <img src="../assets/found_2.png"/>
-              <ion-card-content>
-                <ion-card-title>
-                  香甜冰淇淋
                 </ion-card-title>
               </ion-card-content>
             </ion-card></a>
@@ -108,11 +99,22 @@
 
       <div class="box_2">
           <ul>
-            <li><a href="">
+            <li style="width: 130px;height: 100px;border: 1px solid gray;"><a href="">
               <img src="" alt="">
-              <p>辣椒</p>
-              <span>+关注</span>
+              <p>辣子</p>
+              <div><span>+关注</span></div>
             </a></li>
+            <li style="width: 130px;height: 100px;border: 1px solid gray;"><a href="">
+              <img src="" alt="">
+              <p>辣子</p>
+              <div><span>+关注</span></div>
+            </a></li>
+            <li style="width: 130px;height: 100px;border: 1px solid gray;"><a href="">
+              <img src="" alt="">
+              <p>辣子</p>
+              <div><span>+关注</span></div>
+            </a></li>
+
           </ul>
       </div>
 
@@ -126,12 +128,13 @@
           <li><a href=""><img src="../assets/found_8.png" alt=""></a></li>
           <li><a href=""><img src="../assets/found_9.png" alt=""></a></li>
           <li><a href=""><img src="../assets/found_10.png" alt=""></a></li>
-          <li class="lis"><a href=""><img src="../assets/found_11.png" alt=""></a></li>
+          <li><a href=""><img src="../assets/found_11.png" alt=""></a></li>
           <li><a href=""><img src="../assets/found_12.png" alt=""></a></li>
           <li><a href=""><img src="../assets/found_13.png" alt=""></a></li>
-          <li><a href=""><img src="../assets/found_14.png" alt=""></a></li>
+          <li class="lis"><a href=""><img src="../assets/found_14.png" alt=""></a></li>
         </ul>
       </div>
+
 
 
 
