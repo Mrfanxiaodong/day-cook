@@ -1,104 +1,105 @@
 page-found {
-}
-*{
-  padding:0;
-  margin:0;
-}
-.lunbo{
-  width: 100%;
-  height: 153px;
-}
-ion-title{
-  width: 150px;
-  height: 100%;
-  margin:0 auto;
-  text-align: center;
-}
-ion-slide img{
-  width: 100%;
-  height: 100%;
-}
-.zhu_top1 h5{
-  float: left;
-  margin-left:12px;
-  margin-bottom:0;
-}
-.zhu_top1 h3{
-  float: left;
-  font-size:16px;
-  line-height:28px;
-  margin-left:10px;
-  margin-top:15px;
-  margin-bottom:0;
-}
-.zhu_top1{
-  width: 100%;
-  height: 40px;
-}
-.box{
-  width: 100%;
-  overflow-x: auto;
-  overflow:scroll;
-}
-.box ul{
-  width: 1200px;
-  list-style: none;
-  overflow: hidden;
-}
-.box ul li{
-  width: 135px;
-  height: 170px;
-  float: left;
-}
-.box ul li img{
-  margin-left: 10px;
-}
-.box ul li a{
-  text-decoration: none;
-}
-.box ul li ion-card-title{
-  font-size:14px;
-  font-weight: bold;
-}
-.box_2{
-  width: 100%;
-  overflow-x: auto;
-  overflow:scroll;
-}
-.box_2 ul{
-  width: 1200px;
-  list-style: none;
-  overflow: hidden;
-}
+  *{
+    padding:0;
+    margin:0;
+  }
+  .lunbo{
+    width: 100%;
+    height: 153px;
+  }
+  ion-title{
+    width: 150px;
+    height: 100%;
+    margin:0 auto;
+    text-align: center;
+  }
+  ion-slide img{
+    width: 100%;
+    height: 100%;
+  }
+  .zhu_top1 h5{
+    float: left;
+    margin-left:12px;
+    margin-bottom:0;
+  }
+  .zhu_top1 h3{
+    float: left;
+    font-size:16px;
+    line-height:28px;
+    margin-left:10px;
+    margin-top:15px;
+    margin-bottom:0;
+  }
+  .zhu_top1{
+    width: 100%;
+    height: 40px;
+  }
+  .box{
+    width: 100%;
+    overflow-x: auto;
+    overflow:scroll;
+  }
+  .box ul{
+    width: 1200px;
+    list-style: none;
+    overflow: hidden;
+  }
+  .box ul li{
+    width: 135px;
+    height: 170px;
+    float: left;
+  }
+  .box ul li img{
+    margin-left: 10px;
+  }
+  .box ul li a{
+    text-decoration: none;
+  }
+  .box ul li ion-card-title{
+    font-size:14px;
+    font-weight: bold;
+  }
+  .box_2{
+    width: 100%;
+    overflow-x: auto;
+    overflow:scroll;
+  }
+  .box_2 ul{
+    width: 1200px;
+    list-style: none;
+    overflow: hidden;
+  }
 
 
-.box_3{
-  width: 100%;
-  position: relative;
-}
-.box_3 ul{
-  list-style: none;
-  width: 100%;
-  height: 500px;
-  position: relative;
-}
-.box_3 ul li{
-  float: left;
-  width: 180px;
-  margin:10px;
-}
-.box_3 ul:first-child{
-  position: absolute;
-  left:0;
-}
-.box_3 ul{
-  position: absolute;
-  left: 0;
-}
-.lis{
-  position: absolute;
-  left:0;
-  top:255px;
+  .box_3{
+    width: 100%;
+    position: relative;
+  }
+  .box_3 ul{
+    list-style: none;
+    width: 100%;
+    height: 500px;
+    position: relative;
+  }
+  .box_3 ul li{
+    float: left;
+    width: 180px;
+    margin:10px;
+  }
+  .box_3 ul:first-child{
+    position: absolute;
+    left:0;
+  }
+  .box_3 ul{
+    position: absolute;
+    left: 0;
+  }
+  .lis{
+    position: absolute;
+    left:0;
+    top:255px;
+  }
+
 }
 
 

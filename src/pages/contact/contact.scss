@@ -1,77 +1,75 @@
-//*{
-//  margin: 0;
-//  padding: 0;
-//}
-.lunbotu{
-  height: 133px;
-}
-h4{
-  margin-left: 20px;
-}
-h4 ion-icon{
-  margin-right: 10px;
-}
-.col-one{
-  margin-left: 10px;
-  margin-top: 10px;
-  height: 10px;
-}
-.col-two{
-  height: 20px;
-  text-align: left;
-  line-height: 20px;
-}
-.p-yxzt{
-  font-weight: bold;
-  font-size: 15px;
-  line-height: 8px;
-}
-img{
-  width: 100%;
-  margin-top: 20px;
-}
-.huadong{
-  scrollbar-base-color: white;
-}
-.huadong ul{
-  list-style: none;
-  width: 700px;
-  padding: 0;
-}
-.huadong ul li{
-  float: left;
-  margin-left: 10px;
+page-contact{
+  .lunbotu{
+    height: 133px;
+  }
+  h4{
+    margin-left: 20px;
+  }
+  h4 ion-icon{
+    margin-right: 10px;
+  }
+  .col-one{
+    margin-left: 10px;
+    margin-top: 10px;
+    height: 10px;
+  }
+  .col-two{
+    height: 20px;
+    text-align: left;
+    line-height: 20px;
+  }
+  .p-yxzt{
+    font-weight: bold;
+    font-size: 15px;
+    line-height: 8px;
+  }
+  img{
+    width: 100%;
+    margin-top: 20px;
+  }
+  .huadong{
+    scrollbar-base-color: white;
+  }
+  .huadong ul{
+    list-style: none;
+    width: 700px;
+    padding: 0;
+  }
+  .huadong ul li{
+    float: left;
+    margin-left: 10px;
 
-}
-.huadong ul li img{
-  width: 100px;
-  height: 100px;
-}
-.huadong ul li p{
-  width: 100px;
-  text-align: center;
-  margin: 0px;
-  font-size: 15px;
-}
-.huadong ul li p del{
-  font-size: 6px;
-}
-.huadong ul li ion-icon{
-  margin-top: 60px;
-  margin-left: 45px;
-}
-.prodectlist ul{
-  width: 100%;
-  list-style: none;
-  margin: 0;
-  padding: 0;
-}
-.prodectlist ul li{
-  width: 46%;
-  float: left;
-  margin-left: 10px;
-}
-.prodectlist ul li img{
-  width: 160px;
-  height: 150px;
+  }
+  .huadong ul li img{
+    width: 100px;
+    height: 100px;
+  }
+  .huadong ul li p{
+    width: 100px;
+    text-align: center;
+    margin: 0px;
+    font-size: 15px;
+  }
+  .huadong ul li p del{
+    font-size: 6px;
+  }
+  .huadong ul li ion-icon{
+    margin-top: 60px;
+    margin-left: 45px;
+  }
+  .prodectlist ul{
+    width: 100%;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  .prodectlist ul li{
+    width: 46%;
+    float: left;
+    margin-left: 10px;
+  }
+  .prodectlist ul li img{
+    width: 160px;
+    height: 150px;
+  }
 }
