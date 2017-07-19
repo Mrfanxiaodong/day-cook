@@ -16,13 +16,13 @@ export class HomePage implements OnInit{
   ) {}
 
   ngOnInit(): void {
-  this.cs.all().subscribe(data=>{
+  this.cs.all_seven().subscribe(data=>{
     this.cookarr = data;
   });
-  this.cs.alld_more().subscribe(data=>{
+  this.cs.all_sevenmore().subscribe(data=>{
       this.d_morepic = data;
     })
-    this.cs.alld_two().subscribe(data=>{
+    this.cs.alld_seventwo().subscribe(data=>{
       this.d_two = data;
     })
 

@@ -7,20 +7,15 @@ import 'rxjs/add/operator/map';
   templateUrl: 'about.html'
 })
 export class AboutPage implements OnInit{
-  acookarr = [];
-  amore_pic=[];
-  constructor(public navCtrl: NavController,public acs:CookService) {
-
-  }
+  allpic = [];
+  constructor(public navCtrl: NavController,public cs:CookService)
+  {}
   ngOnInit():void{
-    this.acs.all().subscribe(data=>{
-        this.acookarr = data;
-        console.log(this.acookarr)
+    this.cs.all_p().subscribe(data=>{
+      this.allpic = data;
+      console.log(this.allpic)
     });
-    this.acs.alld_two().subscribe(data=>{
-     this.amore_pic = data;
-     console.log(this.amore_pic)
-    })
+
     }
 
 }
