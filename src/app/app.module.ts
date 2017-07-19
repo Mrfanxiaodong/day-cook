@@ -31,7 +31,6 @@ import {ProductListPage} from "../pages/product-list/product-list";
   ],
   imports: [
     BrowserModule,HttpModule,
-    IonicModule.forRoot(MyApp),
     BrowserModule,
     IonicModule.forRoot(MyApp,{
       tabsHideOnSubPages: 'true'
