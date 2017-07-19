@@ -1,3 +1,83 @@
-page-home {
+page-home::-webkit-scrollbar {
+  display: none;
+}
+*{
+  padding: 0;
+  margin: 0;
+}
+.toptu{
+  height: 139px;
+}
+.fournav {
+  height: 60px;
+  color: gray;
+}
+.fournav a{
+  text-decoration: none;
+  color: gray;
+}
+.fournav ion-icon{
+ font-size: 45px;
+}
+.line{
+  margin-top: 20px;
+  height: 5px;
+  background-color: lightgray;
+}
+.ziti{
+  height: 40px;
+  line-height: 40px;
+}
+.ziti-mei{
+  font-size: 16px;
+}
+.ziti-hou a{
+  text-decoration: none;
+  color: #8e9093;
+  font-size: 13px;
+}
 
+.cards{
+  width: 200px;
+  height: 295px;
+}
+.cards img{
+  width: 200px;
+  height: 200px;
+}
+.cards span{
+  font-size: 6px;
+  color: #8e9093;
+}
+div.item-inner{
+}
+.guntu{
+  overflow-x: auto;
+}
+.guntu
+ul{
+  width:1750px;
+  list-style: none;
+}
+ul li{
+  float: left;
+}
+div.pic{
+  height: 170px;
+}
+.pic img{
+  width: 100%;
+  height: 170px;
+}
+.item-md{
+  min-height: 0;
+  height: 30px;
+}
+.lat{
+  float: left;
+  width: 200px;
+  height: 200px;
+  text-align: center;
+  line-height: 200px;
+  background-color: #8f8f8f;
 }
