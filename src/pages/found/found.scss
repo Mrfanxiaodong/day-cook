@@ -46,9 +46,12 @@ ion-slide img{
   overflow: hidden;
 }
 .box ul li{
-  width: 140px;
+  width: 135px;
   height: 170px;
   float: left;
+}
+.box ul li img{
+  margin-left: 10px;
 }
 .box ul li a{
   text-decoration: none;
