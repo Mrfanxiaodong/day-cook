@@ -1,24 +1,25 @@
 import { Component } from '@angular/core';
 import { NavController, NavParams } from 'ionic-angular';
+import {FoundCenterPage} from "../found-center/found-center";
 
-/**
- * Generated class for the FoundPage page.
- *
- * See http://ionicframework.com/docs/components/#navigation for more info
- * on Ionic pages and navigation.
- */
 
 @Component({
   selector: 'page-found',
   templateUrl: 'found.html',
 })
 export class FoundPage {
-
   constructor(public navCtrl: NavController, public navParams: NavParams) {
   }
 
   ionViewDidLoad() {
     console.log('ionViewDidLoad FoundPage');
+  }
+  back(){
+    this.navCtrl.pop();
+  }
+
+  founder(){
+    this.navCtrl.push(FoundCenterPage)
   }
 
 }

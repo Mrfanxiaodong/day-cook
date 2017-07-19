@@ -7,11 +7,19 @@ page-found {
     width: 100%;
     height: 153px;
   }
+  ion-navbar{
+    position: relative;
+  }
   ion-title{
     width: 150px;
     height: 100%;
     margin:0 auto;
     text-align: center;
+  }
+  ion-navbar h3{
+    position: absolute;
+    right:15px;
+    top:15px;
   }
   ion-slide img{
     width: 100%;
@@ -27,8 +35,7 @@ page-found {
     font-size:16px;
     line-height:28px;
     margin-left:10px;
-    margin-top:15px;
-    margin-bottom:0;
+    margin-top:-3px;
   }
   .zhu_top1{
     width: 100%;
@@ -38,6 +45,7 @@ page-found {
     width: 100%;
     overflow-x: auto;
     overflow:scroll;
+    margin-top:-10px;
   }
   .box ul{
     width: 1200px;
@@ -45,12 +53,9 @@ page-found {
     overflow: hidden;
   }
   .box ul li{
-    width: 135px;
-    height: 170px;
+    width: 140px;
+    height: 239px;
     float: left;
-  }
-  .box ul li img{
-    margin-left: 10px;
   }
   .box ul li a{
     text-decoration: none;
@@ -69,6 +74,27 @@ page-found {
     list-style: none;
     overflow: hidden;
   }
+  .box_2 ul li{
+    float: left;
+    margin-left: 7px;
+  }
+  .box_2 ul li a{
+    text-decoration: none;
+  }
+  .box_2 ul li{
+    text-align: center;
+  }
+  .box_2 ul li p{
+    color: black;
+  }
+  .box_2 ul li div{
+    width: 100px;
+    height: 20px;
+    background-color: #fd5e2f;
+    margin-left:12px;
+    border-radius: 10px;
+    color: white;
+  }
 
 
   .box_3{
@@ -83,21 +109,13 @@ page-found {
   }
   .box_3 ul li{
     float: left;
-    width: 180px;
+    width: 160px;
     margin:10px;
-  }
-  .box_3 ul:first-child{
-    position: absolute;
-    left:0;
-  }
-  .box_3 ul{
-    position: absolute;
-    left: 0;
   }
   .lis{
     position: absolute;
     left:0;
-    top:255px;
+    top:345px;
   }
 
 }
