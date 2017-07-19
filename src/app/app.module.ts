@@ -32,7 +32,7 @@ import {UserCenterPage} from "../pages/user-center/user-center";
     IonicModule.forRoot(MyApp),
     BrowserModule,
     IonicModule.forRoot(MyApp,{
-      tabsHideOnSubPages:'true'
+      tabsHideOnSubPages: 'true'
     })
   ],
   bootstrap: [IonicApp],
