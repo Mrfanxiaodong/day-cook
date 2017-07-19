@@ -1,7 +1,5 @@
 import {Component, OnInit, ViewChild} from '@angular/core';
 import { NavController,Slides } from 'ionic-angular';
-import {MycookPage} from "../mycook/mycook";
-import {Http} from "@angular/http";
 import 'rxjs/add/operator/map';
 import {CookService} from "../../cook.service";
 
@@ -25,7 +23,6 @@ export class HomePage implements OnInit{
       this.d_morepic = data;
     })
     this.cs.alld_two().subscribe(data=>{
-      console.log(data);
       this.d_two = data;
     })
 
