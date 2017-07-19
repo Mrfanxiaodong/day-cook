@@ -12,6 +12,8 @@ import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
 import {FoundPage} from "../pages/found/found";
 import {MycookPage} from "../pages/mycook/mycook";
+import {HttpModule} from "@angular/http";
+import {CookService} from "../cook.service";
 import {UserCenterPage} from "../pages/user-center/user-center";
 
 @NgModule({
@@ -26,9 +28,11 @@ import {UserCenterPage} from "../pages/user-center/user-center";
     UserCenterPage
   ],
   imports: [
+    BrowserModule,HttpModule,
+    IonicModule.forRoot(MyApp),
     BrowserModule,
     IonicModule.forRoot(MyApp,{
-      tabsHideOnSubPages:'true'
+      tabsHideOnSubPages: 'true'
     })
   ],
   bootstrap: [IonicApp],
@@ -45,6 +49,7 @@ import {UserCenterPage} from "../pages/user-center/user-center";
   providers: [
     StatusBar,
     SplashScreen,
+    CookService,
     {provide: ErrorHandler, useClass: IonicErrorHandler}
   ]
 })

@@ -9,10 +9,14 @@ import {UserCenterPage} from "../user-center/user-center";
 export class MycookPage {
 
   constructor(public navCtrl: NavController, public navParams: NavParams) {
+    console.log(navParams)
   }
 
   ionViewDidLoad() {
     console.log('ionViewDidLoad MycookPage');
+  }
+  back(){
+    this.navCtrl.pop();
   }
 
   user(){
