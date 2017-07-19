@@ -27,7 +27,9 @@ import {UserCenterPage} from "../pages/user-center/user-center";
   ],
   imports: [
     BrowserModule,
-    IonicModule.forRoot(MyApp)
+    IonicModule.forRoot(MyApp,{
+      tabsHideOnSubPages:'true'
+    })
   ],
   bootstrap: [IonicApp],
   entryComponents: [

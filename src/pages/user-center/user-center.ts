@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { NavController, NavParams } from 'ionic-angular';
+import {MycookPage} from "../mycook/mycook";
 
 /**
  * Generated class for the UserCenterPage page.
@@ -20,5 +21,7 @@ export class UserCenterPage {
   ionViewDidLoad() {
     console.log('ionViewDidLoad UserCenterPage');
   }
-
+  back(){
+    this.navCtrl.push(MycookPage)
+  }
 }
