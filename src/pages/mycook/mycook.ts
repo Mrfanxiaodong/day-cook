@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { NavController, NavParams } from 'ionic-angular';
+import {UserCenterPage} from "../user-center/user-center";
 
 @Component({
   selector: 'page-mycook',
@@ -12,6 +13,10 @@ export class MycookPage {
 
   ionViewDidLoad() {
     console.log('ionViewDidLoad MycookPage');
+  }
+
+  user(){
+    this.navCtrl.push(UserCenterPage)
   }
 
 }
