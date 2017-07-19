@@ -15,6 +15,7 @@ import {MycookPage} from "../pages/mycook/mycook";
 import {HttpModule} from "@angular/http";
 import {CookService} from "../cook.service";
 import {UserCenterPage} from "../pages/user-center/user-center";
+import {ProductListPage} from "../pages/product-list/product-list";
 
 @NgModule({
   declarations: [
@@ -25,7 +26,8 @@ import {UserCenterPage} from "../pages/user-center/user-center";
     TabsPage,
     FoundPage,
     MycookPage,
-    UserCenterPage
+    UserCenterPage,
+    ProductListPage
   ],
   imports: [
     BrowserModule,HttpModule,
@@ -44,7 +46,8 @@ import {UserCenterPage} from "../pages/user-center/user-center";
     TabsPage,
     FoundPage,
     MycookPage,
-    UserCenterPage
+    UserCenterPage,
+    ProductListPage
   ],
   providers: [
     StatusBar,
