@@ -12,6 +12,7 @@ import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
 import {FoundPage} from "../pages/found/found";
 import {MycookPage} from "../pages/mycook/mycook";
+import {UserCenterPage} from "../pages/user-center/user-center";
 
 @NgModule({
   declarations: [
@@ -21,7 +22,8 @@ import {MycookPage} from "../pages/mycook/mycook";
     HomePage,
     TabsPage,
     FoundPage,
-    MycookPage
+    MycookPage,
+    UserCenterPage
   ],
   imports: [
     BrowserModule,
@@ -35,7 +37,8 @@ import {MycookPage} from "../pages/mycook/mycook";
     HomePage,
     TabsPage,
     FoundPage,
-    MycookPage
+    MycookPage,
+    UserCenterPage
   ],
   providers: [
     StatusBar,

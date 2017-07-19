@@ -1,5 +1,151 @@
 <ion-content class="content-header">
-    <div class="user">
-      <img src="http://www.daydaycook.com.cn/daydaycook/website/img/noimg.png" alt="">
+  <!--头部登录内容-->
+  <ion-grid class="background">
+    <!--设置页面跳转-->
+    <a (click)="shezhi()">
+      <ion-row>
+        <ion-col>设置</ion-col>
+      </ion-row>
+    </a>
+    <ion-row class="height7"></ion-row>
+    <!--点击进入登录页面-->
+    <a>
+      <ion-row (click)="user()">
+        <ion-col col-4></ion-col>
+        <ion-col col-4 class="touxiang">
+          <img src="http://www.daydaycook.com.cn/daydaycook/website/img/noimg.png" alt="">
+        </ion-col>
+        <ion-col col-4></ion-col>
+      </ion-row>
+    </a>
+
+    <a>
+      <ion-row (click)="user()">
+        <ion-col col-4></ion-col>
+        <ion-col col-4 class="text">登录/注册</ion-col>
+        <ion-col col-4></ion-col>
+      </ion-row>
+    </a>
+
+    <ion-row class="height"></ion-row>
+    <a>
+     <ion-row (click)="user()">
+       <ion-col class="text1" col-4>
+         0&nbsp;&nbsp;
+         <br>
+         关注
+       </ion-col>
+       <ion-col col4></ion-col>
+       <ion-col class="text2" col-4>
+         &nbsp;&nbsp;&nbsp;&nbsp;0
+         <br>
+         风车叶
+       </ion-col>
+     </ion-row>
+    </a>
+  </ion-grid>
+
+  <!--上单菜单-->
+  <div class="nav">
+    <div class="nav-content">
+      <ion-grid style="padding: 0px">
+        <ion-row class="list-1" (click)="user()">
+          <ion-col col-4 style="padding:10px 0px 0px 0px;">
+            <ion-icon name="heart"></ion-icon>
+            <br>
+            收藏
+          </ion-col>
+          <div class="xian"></div>
+          <ion-col col-3.5 style="padding: 10px 0px 0px 0px;">
+            <ion-icon name="cart"></ion-icon>
+            <br>
+            购物车
+          </ion-col>
+          <div class="xian"></div>
+          <ion-col col-4 style="padding: 10px 0px 0px 0px;">
+            <ion-icon name="document"></ion-icon>
+            <br>
+            福利社
+          </ion-col>
+        </ion-row>
+
+        <ion-row class="list-2" (click)="user()">
+          <ion-col col-4 style="padding: 0px 0px 0px 10px;">
+            <ion-icon name="copy"></ion-icon>
+            &nbsp;我的订单
+          </ion-col>
+          <ion-col col-7></ion-col>
+          <ion-col class="jiantou">
+            >
+          </ion-col>
+        </ion-row>
+
+        <ion-row class="list-3" (click)="user()">
+          <ion-col col-4 style="padding: 0px 0px 0px 10px;">
+            <ion-icon name="list-box"></ion-icon>
+            &nbsp;我的课程
+          </ion-col>
+          <ion-col col-7></ion-col>
+          <ion-col class="jiantou">
+            >
+          </ion-col>
+        </ion-row>
+
+        <ion-row class="list-4" (click)="user()">
+          <ion-col col-4 style="padding: 0px 0px 0px 10px;">
+            <ion-icon name="medal"></ion-icon>
+            &nbsp;签到奖励
+          </ion-col>
+          <ion-col col-7></ion-col>
+          <ion-col class="jiantou">
+            >
+          </ion-col>
+        </ion-row>
+
+        <ion-row class="list-5" (click)="user()">
+          <ion-col col-4 style="padding: 0px 0px 0px 10px;">
+            <ion-icon name="ribbon"></ion-icon>
+            &nbsp;我的足迹
+          </ion-col>
+          <ion-col col-7></ion-col>
+          <ion-col class="jiantou">
+            >
+          </ion-col>
+        </ion-row>
+
+        <ion-row class="list-6" (click)="user()">
+          <ion-col col-4 style="padding: 0px 0px 0px 10px;">
+            <ion-icon name="pin"></ion-icon>
+            &nbsp;地址管理
+          </ion-col>
+          <ion-col col-7></ion-col>
+          <ion-col class="jiantou">
+            >
+          </ion-col>
+        </ion-row>
+
+        <ion-row class="list-7" (click)="user()">
+          <ion-col col-4 style="padding: 0px 0px 0px 10px;">
+            <ion-icon name="alert"></ion-icon>
+            &nbsp;常见问题
+          </ion-col>
+          <ion-col col-7></ion-col>
+          <ion-col class="jiantou">
+            >
+          </ion-col>
+        </ion-row>
+
+        <ion-row class="list-8" (click)="user()">
+          <ion-col col-4 style="padding: 0px 0px 0px 10px;">
+            <ion-icon name="alert"></ion-icon>
+            &nbsp;意见反馈
+          </ion-col>
+          <ion-col col-7></ion-col>
+          <ion-col class="jiantou">
+            >
+          </ion-col>
+        </ion-row>
+      </ion-grid>
     </div>
+  </div>
 </ion-content>
