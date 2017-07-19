@@ -16,7 +16,6 @@ import {HttpModule} from "@angular/http";
 import {CookService} from "../cook.service";
 import {UserCenterPage} from "../pages/user-center/user-center";
 import {ProductListPage} from "../pages/product-list/product-list";
-import {FoundCenterPage} from "../pages/found-center/found-center";
 
 @NgModule({
   declarations: [
@@ -28,8 +27,7 @@ import {FoundCenterPage} from "../pages/found-center/found-center";
     FoundPage,
     MycookPage,
     UserCenterPage,
-    ProductListPage,
-    FoundCenterPage
+    ProductListPage
   ],
   imports: [
     BrowserModule,HttpModule,
@@ -48,8 +46,7 @@ import {FoundCenterPage} from "../pages/found-center/found-center";
     FoundPage,
     MycookPage,
     UserCenterPage,
-    ProductListPage,
-    FoundCenterPage
+    ProductListPage
   ],
   providers: [
     StatusBar,

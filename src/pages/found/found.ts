@@ -1,6 +1,5 @@
 import { Component } from '@angular/core';
 import { NavController, NavParams } from 'ionic-angular';
-import {FoundCenterPage} from "../found-center/found-center";
 
 
 @Component({
@@ -18,8 +17,5 @@ export class FoundPage {
     this.navCtrl.pop();
   }
 
-  founder(){
-    this.navCtrl.push(FoundCenterPage)
-  }
 
 }
