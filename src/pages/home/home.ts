@@ -6,6 +6,7 @@ import {HomeTwoCaiPage} from "../home-two-cai/home-two-cai";
 import {HomeTwoCai2Page} from "../home-two-cai2/home-two-cai2";
 import {AboutPage} from "../about/about";
 import {HomeVideoPage} from "../home-video/home-video";
+import {HomeClassPage} from "../home-class/home-class";
 
 @Component({
   selector: 'page-home',
@@ -42,6 +43,9 @@ export class HomePage implements OnInit{
   }
   homevideo(){
     this.navCtrl.push(HomeVideoPage)
+  }
+  gohome_class(){
+    this.navCtrl.push(HomeClassPage)
   }
 }
 

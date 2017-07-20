@@ -9,7 +9,7 @@ import {UserCenterPage} from "../user-center/user-center";
 })
 export class ContactPage {
 
-  constructor(public navCtrl: NavController,public navParams: NavParams) {
+    constructor(public navCtrl: NavController,public navParams: NavParams) {
   }
 
   ionViewDidLoad() {

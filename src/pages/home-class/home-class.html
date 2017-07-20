@@ -1,0 +1,37 @@
+<!--
+  Generated template for the HomeClassPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>厨艺课堂</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content>
+  <div *ngFor="let la of classtus" class="classtu-ul">
+    <ul>
+      <li>
+        <img style="width: 100%;height: 180px;" src="{{la.imgurl}}">
+        <p style="font-size: 15px; margin-left: 10px;margin-top:0px;padding: 0;">{{la.name}}</p>
+        <div style="margin: 0;padding: 0; width: 400px;height: 30px;">
+          <p style="margin-top:0px;padding: 0; float: left; margin-left: 10px; background-color:#D2691E;width:50px; color: white; font-size: 8px;">限时折扣</p>
+          <p style="margin-top: -3px; margin-left: 10px; font-size: 15px; padding: 0; float: left; color: red;">￥18</p>
+          <del style="color: #778899; margin-top: -3px; margin-left: 10px; padding: 0; float: left;">￥40.00</del>
+        </div>
+        <div style="margin-left: 10px;padding: 0; width: 48px;">
+          <img style="margin-top: 0px; float: left; width: 20px;height: 20px;" src="http://pic.daydaycook.com/production/images/20170330/10b15085-e330-4ff5-9f58-5cc3a8d9753c">
+          <p style="float: left; width: 28px;height: 20px; margin-top: 0;padding: 0;">辣椒</p>
+        </div>
+
+      </li>
+    </ul>
+
+  </div>
+
+</ion-content>
