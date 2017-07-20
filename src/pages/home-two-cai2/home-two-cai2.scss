@@ -17,4 +17,20 @@ page-home-two-cai2 {
   .las{
     width: 100%;
   }
+  form{
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+  }
+  form input{
+    border-radius: 10px;
+    border: none;
+    display: inline-block;
+    width: 80%;
+    height: 30px;
+    background-color: #f8f8f8;
+  }
+  form ion-icon{
+    font-size: 25px;
+  }
 }

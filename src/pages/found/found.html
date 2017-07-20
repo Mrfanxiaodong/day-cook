@@ -40,7 +40,7 @@
       <div class="box">
         <ul>
           <li>
-            <a (click)="founder()"><ion-card>
+            <a><ion-card>
               <img src="../assets/found_1.png"/>
               <ion-card-content>
                 <ion-card-title>
@@ -80,7 +80,7 @@
             </ion-card>
           </li>
           <li>
-            <a href=""><ion-card>
+            <a><ion-card>
               <img src="../assets/found_6.png"/>
               <ion-card-content>
                 <ion-card-title>
@@ -99,22 +99,11 @@
 
       <div class="box_2">
           <ul>
-            <li style="width: 130px;height: 100px;border: 1px solid gray;"><a href="">
-              <img src="" alt="">
-              <p>辣子</p>
+            <li style="width: 110px;height: 130px;border: 1px solid #909090;" (click)="founder(ck)" *ngFor="let ck of found"><a href="javascript:">
+              <img src="{{ck.imgurl}}" alt="">
+              <p>{{ck.text}}</p>
               <div><span>+关注</span></div>
             </a></li>
-            <li style="width: 130px;height: 100px;border: 1px solid gray;"><a href="">
-              <img src="" alt="">
-              <p>辣子</p>
-              <div><span>+关注</span></div>
-            </a></li>
-            <li style="width: 130px;height: 100px;border: 1px solid gray;"><a href="">
-              <img src="" alt="">
-              <p>辣子</p>
-              <div><span>+关注</span></div>
-            </a></li>
-
           </ul>
       </div>
 
