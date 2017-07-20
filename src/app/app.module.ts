@@ -21,6 +21,8 @@ import {HomeTwoCaiPage} from "../pages/home-two-cai/home-two-cai";
 import {HomeTwoCai2Page} from "../pages/home-two-cai2/home-two-cai2";
 import {FoundCenterPage} from "../pages/found-center/found-center";
 import {HomeShipuPage} from "../pages/home-shipu/home-shipu";
+import {HomeVideoPage} from "../pages/home-video/home-video";
+
 import {HomeClassPage} from "../pages/home-class/home-class";
 
 @NgModule({
@@ -39,6 +41,8 @@ import {HomeClassPage} from "../pages/home-class/home-class";
     HomeTwoCai2Page,
     FoundCenterPage,
     HomeShipuPage
+    FoundCenterPage,
+    HomeVideoPage,
     FoundCenterPage,
     HomeClassPage,
   ],
@@ -65,6 +69,8 @@ import {HomeClassPage} from "../pages/home-class/home-class";
     HomeTwoCai2Page,
     FoundCenterPage,
     HomeShipuPage
+    FoundCenterPage,
+    HomeVideoPage,
     FoundCenterPage,
     HomeClassPage,
   ],
