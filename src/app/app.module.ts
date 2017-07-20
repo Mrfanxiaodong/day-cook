@@ -40,7 +40,7 @@ import {HomeClassPage} from "../pages/home-class/home-class";
     HomeTwoCaiPage,
     HomeTwoCai2Page,
     FoundCenterPage,
-    HomeShipuPage
+    HomeShipuPage,
     FoundCenterPage,
     HomeVideoPage,
     FoundCenterPage,
@@ -68,7 +68,7 @@ import {HomeClassPage} from "../pages/home-class/home-class";
     HomeTwoCaiPage,
     HomeTwoCai2Page,
     FoundCenterPage,
-    HomeShipuPage
+    HomeShipuPage,
     FoundCenterPage,
     HomeVideoPage,
     FoundCenterPage,
