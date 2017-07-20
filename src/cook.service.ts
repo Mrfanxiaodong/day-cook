@@ -38,7 +38,7 @@ export class CookService{
       .map(res=>{return res.json().data})
   }
   allfound(){
-    return this.http.get('http://localhost:3000/found')
+    return this.http.get('http://localhost:3000/dds/f')
       .map(res=>res.json().data)
   }
 }

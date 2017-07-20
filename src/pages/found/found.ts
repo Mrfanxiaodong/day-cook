@@ -27,7 +27,7 @@ export class FoundPage {
     this.navCtrl.push(FoundCenterPage,{cai:params})
   }
   ngOnInit(): void {
-    this.cs.all().subscribe(data=>{
+    this.cs.allfound().subscribe(data=>{
       this.cookarr = data;
     });
     this.cs.allfound().subscribe(data=>{
