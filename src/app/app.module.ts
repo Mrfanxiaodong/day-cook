@@ -16,6 +16,8 @@ import {HttpModule} from "@angular/http";
 import {CookService} from "../cook.service";
 import {UserCenterPage} from "../pages/user-center/user-center";
 import {ProductListPage} from "../pages/product-list/product-list";
+import {HomeTwoCaiPage} from "../pages/home-two-cai/home-two-cai";
+import {HomeTwoCai2Page} from "../pages/home-two-cai2/home-two-cai2";
 
 @NgModule({
   declarations: [
@@ -27,7 +29,9 @@ import {ProductListPage} from "../pages/product-list/product-list";
     FoundPage,
     MycookPage,
     UserCenterPage,
-    ProductListPage
+    ProductListPage,
+    HomeTwoCaiPage,
+    HomeTwoCai2Page
   ],
   imports: [
     BrowserModule,HttpModule,
@@ -46,7 +50,9 @@ import {ProductListPage} from "../pages/product-list/product-list";
     FoundPage,
     MycookPage,
     UserCenterPage,
-    ProductListPage
+    ProductListPage,
+    HomeTwoCaiPage,
+    HomeTwoCai2Page
   ],
   providers: [
     StatusBar,

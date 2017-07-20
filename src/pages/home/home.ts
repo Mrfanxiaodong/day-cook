@@ -2,6 +2,8 @@ import {Component, OnInit, ViewChild} from '@angular/core';
 import { NavController,Slides } from 'ionic-angular';
 import 'rxjs/add/operator/map';
 import {CookService} from "../../cook.service";
+import {HomeTwoCaiPage} from "../home-two-cai/home-two-cai";
+import {HomeTwoCai2Page} from "../home-two-cai2/home-two-cai2";
 
 @Component({
   selector: 'page-home',
@@ -27,12 +29,11 @@ export class HomePage implements OnInit{
     })
 
   }
-
-
-  // go(){
-  //   this.navCtrl.push(MycookPage,{uname:'tom'})
-  // }
-
-
+  gohome_two_cai(params?:object){
+    this.navCtrl.push(HomeTwoCaiPage,{cai:params})
+  }
+  gohome_two_cai2(params?:object){
+    this.navCtrl.push(HomeTwoCai2Page,{cai:params})
+  }
 }
 
