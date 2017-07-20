@@ -8,6 +8,10 @@ export class CookService{
     return this.http.get('http://localhost:3000/dds/all')
       .map(res=>res.json().data)
   };
+  classtu(){
+    return this.http.get('http://localhost:3000/dds/class')
+      .map(res=>res.json().data)
+  }
   all_seven(){
     return this.http.get('http://localhost:3000/dds')
       .map(res=>res.json().data)
@@ -41,4 +45,5 @@ export class CookService{
     return this.http.get('http://localhost:3000/dds/f')
       .map(res=>res.json().data)
   }
+
 }
