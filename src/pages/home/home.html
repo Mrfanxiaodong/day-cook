@@ -72,7 +72,7 @@
 
   <div class="guntu">
     <div  style="float:left" class="fl">
-      <ul *ngFor="let ck of cookarr">
+      <ul *ngFor="let ck of cookarr" (click)="gohome_two_cai()" >
         <li>  <ion-card class="cards" >
           <img src="{{ck.imgurl}}">
           <ion-item >

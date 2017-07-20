@@ -20,10 +20,5 @@ export class CookService{
     return this.http.get('http://localhost:3000/dds/d_w')
       .map(res=>res.json().data)
   }
-  //分页
-  /*all_fen(){
-    let num = 1;
-    return this.http.post('http://localhost:3000/dds/',{pagNum:num})
-      .map(res=>res.json().data)
-  };*/
+
 }
