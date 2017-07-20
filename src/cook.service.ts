@@ -17,4 +17,8 @@ export class CookService{
     return this.http.get('http://localhost:3000/d_two')
       .map(res=>res.json().data)
   }
+  allfound(){
+    return this.http.get('http://localhost:3000/found')
+      .map(res=>res.json().data)
+  }
 }

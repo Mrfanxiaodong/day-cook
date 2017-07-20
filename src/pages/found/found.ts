@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { NavController, NavParams } from 'ionic-angular';
 import {FoundCenterPage} from "../found-center/found-center";
+import {CookService} from "../../cook.service";
 
 
 @Component({
@@ -8,7 +9,11 @@ import {FoundCenterPage} from "../found-center/found-center";
   templateUrl: 'found.html',
 })
 export class FoundPage {
-  constructor(public navCtrl: NavController, public navParams: NavParams) {
+
+  cookarr = [];
+  found=[];
+
+  constructor(public navCtrl: NavController, public cs:CookService) {
   }
 
   ionViewDidLoad() {
@@ -18,8 +23,16 @@ export class FoundPage {
     this.navCtrl.pop();
   }
 
-  founder(){
-    this.navCtrl.push(FoundCenterPage)
+  founder(params?:object){
+    this.navCtrl.push(FoundCenterPage,{cai:params})
+  }
+  ngOnInit(): void {
+    this.cs.all().subscribe(data=>{
+      this.cookarr = data;
+    });
+    this.cs.allfound().subscribe(data=>{
+      this.found = data;
+    })
   }
 
 }
