@@ -15,6 +15,24 @@ page-home-two-cai {
     border-bottom: 1px solid gray;
   }
   .las{
+    margin-bottom: 50px;
     width: 100%;
+    border-bottom: 1px solid gray;
+  }
+  form{
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+  }
+  form input{
+    border-radius: 10px;
+    border: none;
+    display: inline-block;
+    width: 80%;
+    height: 30px;
+    background-color: #f8f8f8;
+  }
+  form ion-icon{
+    font-size: 25px;
   }
 }
