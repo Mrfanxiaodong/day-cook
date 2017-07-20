@@ -9,9 +9,70 @@
         <img src="../../assets/icon/logo.png" alt="">
     </div>
     <ion-row>
-      <ion-col col-5 class="login">登录</ion-col>
+        <ion-col col-5 [ngClass]="{'selected':tab=='login'}" class="login" (click)="switchTab('login')">
+        登录&nbsp;&nbsp;
+        <div class="xian1"></div>
+      </ion-col>
       <ion-col col-2></ion-col>
-      <ion-col col-5 class="zhuce">注册</ion-col>
+      <ion-col col-5 [ngClass]="{'selected':tab=='zc'}" class="zc" (click)="switchTab('zc')">
+        &nbsp;&nbsp;注册
+        <div class="xian2"></div>
+      </ion-col>
+    </ion-row>
+    <ion-row class="height"></ion-row>
+
+    <ion-row>
+      <ion-col col-2></ion-col>
+      <ion-col class="">
+        <input type="text" class="inp_text" [(ngModel)]="uname" onfocus="true">
+        <span class="phone">请输入用户名</span>
+      </ion-col>
+      <ion-col col-2></ion-col>
+    </ion-row>
+
+    <ion-row>
+      <ion-col col-2></ion-col>
+      <ion-col>
+        <input type="password" class="inp_text" [(ngModel)]="upsd">
+        <span class="yzm">请输入密码</span>
+      </ion-col>
+      <ion-col col-2></ion-col>
+    </ion-row>
+
+    <ion-row class="height"></ion-row>
+    <ion-row>
+      <ion-col col-4></ion-col>
+      <ion-col col-4  style="text-align: center" (click)="subButton()">
+        <img src="../../assets/icon/button.png" alt="">
+      </ion-col>
+      <ion-col col-4></ion-col>
+    </ion-row>
+
+    <ion-row class="food"></ion-row>
+
+    <ion-row>
+      <ion-col col-2></ion-col>
+      <ion-col col-8 style="color: #ccc;font-size: 12px;text-align: center;">
+        快速登录日日煮，开启极致美味之旅
+      </ion-col>
+      <ion-col col-2></ion-col>
+    </ion-row>
+
+    <ion-row>
+      <ion-col col-2></ion-col>
+      <ion-col col-2 style="padding: 10px 15px 10px 10px;text-align: center">
+        <img src="../../assets/icon/wx.png" alt="">
+      </ion-col>
+      <ion-col col-2 style="padding: 10px 15px 10px 10px;text-align: center">
+        <img src="../../assets/icon/wb.png" alt="">
+      </ion-col>
+      <ion-col col-2 style="padding: 10px 15px 10px 10px;text-align: center">
+        <img src="../../assets/icon/qq.png" alt="">
+      </ion-col>
+      <ion-col col-2 style="padding: 10px 15px 10px 10px;text-align: center">
+        <img src="../../assets/icon/fb.png" alt="">
+      </ion-col>
+      <ion-col col-1></ion-col>
     </ion-row>
   </ion-grid>
 </ion-content>

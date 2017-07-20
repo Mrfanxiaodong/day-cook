@@ -7,20 +7,33 @@ import 'rxjs/add/operator/map';
   templateUrl: 'about.html'
 })
 export class AboutPage implements OnInit{
-  acookarr = [];
-  amore_pic=[];
-  constructor(public navCtrl: NavController,public acs:CookService) {
+  allpic = [];
+  items = [];
+  constructor(public navCtrl: NavController,public cs:CookService)
+   {
+      for (let i = 0; i < 1; i++) {
+
+        this.items.push( this.items.length );
+      }
+      console.log(this.items)
+   }
+  ngOnInit():void{
+    this.cs.all_p().subscribe(data=>{
+      this.allpic = data;
+    });
 
   }
-  ngOnInit():void{
-    this.acs.all().subscribe(data=>{
-        this.acookarr = data;
-        console.log(this.acookarr)
-    });
-    this.acs.alld_two().subscribe(data=>{
-     this.amore_pic = data;
-     console.log(this.amore_pic)
-    })
-    }
+
+  doInfinite(infiniteScroll) {
+    console.log('Begin async operation');
+
+    setTimeout(() => {
+      for (let i = 0; i < 1; i++) {
+        this.items.push( this.items.length );
+      }
+      console.log('Async operation has ended');
+      infiniteScroll.complete();
+    }, 2000);
+  }
 
 }

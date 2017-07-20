@@ -72,7 +72,7 @@
 
   <div class="guntu">
     <div  style="float:left" class="fl">
-      <ul *ngFor="let ck of cookarr">
+      <ul *ngFor="let ck of cookarr" (click)="gohome_two_cai(ck)" >
         <li>  <ion-card class="cards" >
           <img src="{{ck.imgurl}}">
           <ion-item >
@@ -111,7 +111,7 @@
 
   <div class="guntu">
     <div  style="float:left" class="fl">
-      <ul *ngFor="let ck of d_two">
+      <ul *ngFor="let ck of d_two" (click)="gohome_two_cai(ck)">
         <li>  <ion-card class="cards" >
           <img src="{{ck.imgurl}}">
           <ion-item >
@@ -141,7 +141,7 @@
     </ion-col>
   </ion-row>
   <!--最下面图片-->
-  <div *ngFor="let pic of d_morepic" class="pic">
+  <div *ngFor="let pic of d_morepic" class="pic" (click)="gohome_two_cai2(pic)">
     <img src="{{pic.imgurl}}" alt="">
   </div>
   <!--最下面图片-->
