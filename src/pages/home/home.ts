@@ -5,6 +5,7 @@ import {CookService} from "../../cook.service";
 import {HomeTwoCaiPage} from "../home-two-cai/home-two-cai";
 import {HomeTwoCai2Page} from "../home-two-cai2/home-two-cai2";
 import {AboutPage} from "../about/about";
+import {HomeShipuPage} from "../home-shipu/home-shipu";
 
 @Component({
   selector: 'page-home',
@@ -30,6 +31,9 @@ export class HomePage implements OnInit{
     })
 
   }
+  goshipu(){
+    this.navCtrl.push(HomeShipuPage)
+  }
   gohome_two_cai(params?:object){
     this.navCtrl.push(HomeTwoCaiPage,{cai:params})
   }
@@ -39,5 +43,6 @@ export class HomePage implements OnInit{
   goabout(){
     this.navCtrl.push(AboutPage)
   }
+
 }
 

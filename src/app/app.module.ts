@@ -19,6 +19,7 @@ import {ProductListPage} from "../pages/product-list/product-list";
 import {HomeTwoCaiPage} from "../pages/home-two-cai/home-two-cai";
 import {HomeTwoCai2Page} from "../pages/home-two-cai2/home-two-cai2";
 import {FoundCenterPage} from "../pages/found-center/found-center";
+import {HomeShipuPage} from "../pages/home-shipu/home-shipu";
 
 @NgModule({
   declarations: [
@@ -33,7 +34,8 @@ import {FoundCenterPage} from "../pages/found-center/found-center";
     ProductListPage,
     HomeTwoCaiPage,
     HomeTwoCai2Page,
-    FoundCenterPage
+    FoundCenterPage,
+    HomeShipuPage
   ],
   imports: [
     BrowserModule,HttpModule,
@@ -55,7 +57,8 @@ import {FoundCenterPage} from "../pages/found-center/found-center";
     ProductListPage,
     HomeTwoCaiPage,
     HomeTwoCai2Page,
-    FoundCenterPage
+    FoundCenterPage,
+    HomeShipuPage
   ],
   providers: [
     StatusBar,
