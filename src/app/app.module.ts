@@ -17,6 +17,7 @@ import {CookService} from "../cook.service";
 import {UserCenterPage} from "../pages/user-center/user-center";
 import {ProductListPage} from "../pages/product-list/product-list";
 import {HomeTwoCaiPage} from "../pages/home-two-cai/home-two-cai";
+import {HomeTwoCai2Page} from "../pages/home-two-cai2/home-two-cai2";
 
 @NgModule({
   declarations: [
@@ -29,7 +30,8 @@ import {HomeTwoCaiPage} from "../pages/home-two-cai/home-two-cai";
     MycookPage,
     UserCenterPage,
     ProductListPage,
-    HomeTwoCaiPage
+    HomeTwoCaiPage,
+    HomeTwoCai2Page
   ],
   imports: [
     BrowserModule,HttpModule,
@@ -49,7 +51,8 @@ import {HomeTwoCaiPage} from "../pages/home-two-cai/home-two-cai";
     MycookPage,
     UserCenterPage,
     ProductListPage,
-    HomeTwoCaiPage
+    HomeTwoCaiPage,
+    HomeTwoCai2Page
   ],
   providers: [
     StatusBar,
