@@ -1,0 +1,35 @@
+page-found-center {
+  .found-center-1{
+    width:100%;
+    text-align: center;
+    background-color: #f2ecea;
+    margin-top:-18px;
+  }
+  .found-center-1 img{
+    margin-top:10px;
+    width: 65px;
+    height: 65px;
+    border-radius: 50% ;
+  }
+  .found-center-1 p{
+    font-weight: bolder;
+  }
+  .found-center-1 .f_cont{
+     font-size: 16px;
+    font-weight: bold;
+   }
+  .found-center-1 div{
+    width: 100px;
+    height: 20px;
+    background-color: #fd5e2f;
+    border-radius: 10px;
+    color: white;
+    margin-left:38%;
+  }
+  .found-center-2 p{
+    font-size: 12px;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom:30px;
+  }
+}

@@ -1,0 +1,29 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>{{caidetail.text}}</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+<ion-content>
+  <ion-col col-3 style="padding: 20px" (click)="back()"></ion-col>
+  <div class="found-center-1">
+    <img src="{{caidetail.imgurl}}" alt="">
+    <p class="f_cont">{{caidetail.text}}</p>
+    <p>{{caidetail.cont}}</p>
+    <div><span>+关注</span></div><br>
+  </div>
+  <div class="found-center-2">
+    <img src="{{caidetail.img1}}" alt="">
+    <p>{{caidetail.txt1}}</p>
+    <img src="{{caidetail.img2}}" alt="">
+    <p>{{caidetail.txt2}}</p>
+    <img src="{{caidetail.img3}}" alt="">
+    <p>{{caidetail.txt3}}</p>
+    <img src="{{caidetail.img4}}" alt="">
+    <p>{{caidetail.txt4}}</p>
+  </div>
+
+</ion-content>
+
+
