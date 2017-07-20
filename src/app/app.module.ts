@@ -69,7 +69,7 @@ import {CookactivePage} from "../pages/cookactive/cookactive";
     SearchPage,
     HomeTwoCaiPage,
     HomeTwoCai2Page,
-    CookactivePage
+    CookactivePage,
     FoundCenterPage,
     HomeShipuPage,
     FoundCenterPage,

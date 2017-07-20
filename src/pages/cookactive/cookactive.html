@@ -1,18 +1,53 @@
-<!--
-  Generated template for the CookactivePage page.
 
-  See http://ionicframework.com/docs/components/#navigation for more info on
-  Ionic pages and navigation.
--->
 <ion-header>
-
-  <ion-navbar>
-    <ion-title>cookactive</ion-title>
+  <ion-navbar style="padding: 0px;">
+    <div>
+      <ion-segment [(ngModel)]="pet">
+        <ion-segment-button value="kittens">
+          煮艺家动态
+        </ion-segment-button>
+        <ion-segment-button value="puppies">
+          煮艺分享家
+        </ion-segment-button>
+      </ion-segment>
+    </div>
   </ion-navbar>
-
 </ion-header>
 
 
-<ion-content padding>
+<ion-content style="padding: 0px">
+  <div [ngSwitch]="pet">
+    <ion-list *ngSwitchCase="'kittens'">
+      <ion-row *ngFor="let c of coa" class="header" style="margin-bottom: 30px">
+        <ion-col col-12 class="text" style="padding: 10px 0px 0px 0px">
+          <img src="{{c.imgurl}}" alt="" style="position: relative;top: 10px;left: 10px;margin-right: 15px">
+          {{c.name}}<br><br>
+         <span>{{c.title}}</span>
+          <span class="s1">{{c.content}}</span><br>
+          <img src="{{c.bigimgurl}}" alt="" style="width: 100%;height: 300px;">
+        </ion-col>
+      </ion-row>
+    </ion-list>
 
+    <ion-list *ngSwitchCase="'puppies'">
+      <ion-row class="share_header" style="height: 100px;">
+        <ion-col col-3 class="toux">
+          <img src="http://pic104.nipic.com/file/20160725/23398533_152547047464_2.jpg" alt="">
+        </ion-col>
+        <ion-col col-5 class="zp_text"> <span class="zp_text1">日日煮美食达人招募!</span><span>2017.让我们一起分享你的煮艺</span> </ion-col>
+        <ion-col col-3 class="bmBtn">立即报名</ion-col>
+      </ion-row>
+
+      <ion-row class="height"></ion-row>
+
+      <!--博主-->
+      <ion-row class="bozhu" *ngFor="let b of bo" style="border-bottom: 1px solid #8f8f8f;border-collapse: collapse;height: 100px">
+        <ion-col col-3 class="toux">
+          <img src="{{b.imgurl}}" alt="">
+        </ion-col>
+        <ion-col col-5 class="zp_text" style="margin-top: 20px;"><span class="zp_text1">{{b.name}}</span><br><br><span>{{b.content}}</span> </ion-col>
+        <ion-col col-3 class="bmBtn">+ &nbsp; 关注</ion-col>
+      </ion-row>
+    </ion-list>
+  </div>
 </ion-content>
