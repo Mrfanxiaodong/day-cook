@@ -4,6 +4,10 @@ import 'rxjs/add/operator/map';
 import {CookService} from "../../cook.service";
 import {HomeTwoCaiPage} from "../home-two-cai/home-two-cai";
 import {HomeTwoCai2Page} from "../home-two-cai2/home-two-cai2";
+import {AboutPage} from "../about/about";
+import {HomeShipuPage} from "../home-shipu/home-shipu";
+import {HomeVideoPage} from "../home-video/home-video";
+import {HomeClassPage} from "../home-class/home-class";
 import {CookactivePage} from "../cookactive/cookactive";
 
 @Component({
@@ -30,6 +34,9 @@ export class HomePage implements OnInit{
     })
 
   }
+  goshipu(){
+    this.navCtrl.push(HomeShipuPage)
+  }
   gohome_two_cai(params?:object){
     this.navCtrl.push(HomeTwoCaiPage,{cai:params})
   }
@@ -38,6 +45,13 @@ export class HomePage implements OnInit{
   }
   cookact(){
     this.navCtrl.push(CookactivePage)
+  }
+
+  homevideo(){
+    this.navCtrl.push(HomeVideoPage)
+  }
+  gohome_class(){
+    this.navCtrl.push(HomeClassPage)
   }
 }
 

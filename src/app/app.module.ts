@@ -16,8 +16,14 @@ import {HttpModule} from "@angular/http";
 import {CookService} from "../cook.service";
 import {UserCenterPage} from "../pages/user-center/user-center";
 import {ProductListPage} from "../pages/product-list/product-list";
+import {SearchPage} from "../pages/search/search";
 import {HomeTwoCaiPage} from "../pages/home-two-cai/home-two-cai";
 import {HomeTwoCai2Page} from "../pages/home-two-cai2/home-two-cai2";
+import {FoundCenterPage} from "../pages/found-center/found-center";
+import {HomeShipuPage} from "../pages/home-shipu/home-shipu";
+import {HomeVideoPage} from "../pages/home-video/home-video";
+
+import {HomeClassPage} from "../pages/home-class/home-class";
 import {CookactivePage} from "../pages/cookactive/cookactive";
 
 @NgModule({
@@ -31,8 +37,15 @@ import {CookactivePage} from "../pages/cookactive/cookactive";
     MycookPage,
     UserCenterPage,
     ProductListPage,
+    SearchPage,
     HomeTwoCaiPage,
     HomeTwoCai2Page,
+    FoundCenterPage,
+    HomeShipuPage,
+    FoundCenterPage,
+    HomeVideoPage,
+    FoundCenterPage,
+    HomeClassPage,
     CookactivePage
   ],
   imports: [
@@ -53,9 +66,16 @@ import {CookactivePage} from "../pages/cookactive/cookactive";
     MycookPage,
     UserCenterPage,
     ProductListPage,
+    SearchPage,
     HomeTwoCaiPage,
     HomeTwoCai2Page,
     CookactivePage
+    FoundCenterPage,
+    HomeShipuPage,
+    FoundCenterPage,
+    HomeVideoPage,
+    FoundCenterPage,
+    HomeClassPage,
   ],
   providers: [
     StatusBar,

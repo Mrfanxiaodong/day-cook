@@ -31,21 +31,22 @@
   <!--四个小导航-->
   <ion-row text-center class="fournav">
     <ion-col col-3 >
-      <a href=""><ion-icon name="ios-paper-outline"></ion-icon></a>
+      <a (click)="goshipu()"><ion-icon name="ios-paper-outline"></ion-icon></a>
       <br>
       食谱分类
     </ion-col>
-    <ion-col col-3 >
-      <a href=""><ion-icon name="ios-videocam-outline"></ion-icon></a>
+    <ion-col col-3>
+      <a (click)="homevideo()"><ion-icon name="ios-videocam-outline"></ion-icon></a>
       <br>
       视频专区
     </ion-col>
     <ion-col col-3>
-      <a href=""><ion-icon name="ios-bookmarks-outline"></ion-icon></a>
+      <a (click)="gohome_class()"><ion-icon name="ios-bookmarks-outline"></ion-icon></a>
       <br>
       厨艺课堂
     </ion-col>
     <ion-col col-3>
+      <a><ion-icon name="ios-share-outline"></ion-icon></a>
       <a (click)="cookact()"><ion-icon name="ios-share-outline"></ion-icon></a>
       <br>
       厨艺分享

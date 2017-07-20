@@ -2,6 +2,7 @@ import {Component, OnInit} from '@angular/core';
 import { NavController } from 'ionic-angular';
 import {CookService} from "../../cook.service";
 import 'rxjs/add/operator/map';
+import {SearchPage} from "../search/search";
 @Component({
   selector: 'page-about',
   templateUrl: 'about.html'
@@ -10,20 +11,22 @@ export class AboutPage implements OnInit{
   allpic = [];
   items = [];
   constructor(public navCtrl: NavController,public cs:CookService)
-   {
-      for (let i = 0; i < 1; i++) {
+  {
+    for (let i = 0; i < 1; i++) {
 
-        this.items.push( this.items.length );
-      }
-      console.log(this.items)
-   }
+      this.items.push( this.items.length );
+    }
+    console.log(this.items)
+  }
   ngOnInit():void{
     this.cs.all_p().subscribe(data=>{
       this.allpic = data;
     });
 
   }
-
+  search(){
+    this.navCtrl.push(SearchPage)
+  }
   doInfinite(infiniteScroll) {
     console.log('Begin async operation');
 
