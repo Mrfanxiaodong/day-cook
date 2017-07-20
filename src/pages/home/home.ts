@@ -28,14 +28,8 @@ export class HomePage implements OnInit{
     })
 
   }
-
-
-  // go(){
-  //   this.navCtrl.push(MycookPage,{uname:'tom'})
-  // }
-
-  gohome_two_cai(){
-    this.navCtrl.push(HomeTwoCaiPage)
+  gohome_two_cai(params?:object){
+    this.navCtrl.push(HomeTwoCaiPage,{cai:params})
   }
 }
 

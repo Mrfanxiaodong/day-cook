@@ -1,3 +1,20 @@
 page-home-two-cai {
-
+  *{
+    margin: 0;
+    padding:0;
+  }
+  .hd{
+    padding: 0px;margin: 0;
+    text-align: center;
+  }
+  .itt{
+    display: inline-block;
+    width: 90%;
+  }
+  .dline{
+    border-bottom: 1px solid gray;
+  }
+  .las{
+    width: 100%;
+  }
 }

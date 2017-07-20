@@ -13,8 +13,9 @@ import { NavController, NavParams } from 'ionic-angular';
   templateUrl: 'home-two-cai.html',
 })
 export class HomeTwoCaiPage {
-
+  caidetail;
   constructor(public navCtrl: NavController, public navParams: NavParams) {
+    this.caidetail = this.navParams.get('cai');
   }
 
   ionViewDidLoad() {
