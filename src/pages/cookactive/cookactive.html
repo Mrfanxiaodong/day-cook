@@ -1,38 +1,43 @@
 
-<ion-header>
-  <ion-navbar style="padding: 0px;">
-    <div>
-      <ion-segment [(ngModel)]="pet">
-        <ion-segment-button value="kittens">
+<ion-header class="headerNav">
+  <ion-row style="padding:0px;">
+    <ion-col col-2 style="padding:0px;" (click)="back()">
+      <img src="../../assets/icon/zuo.png" alt="">
+    </ion-col>
+    <ion-col col-8 class="btn" style="padding:0px;">
+      <ion-segment [(ngModel)]="pet" class="btn">
+        <ion-segment-button value="dongtai" class="dongtaibtn">
           煮艺家动态
         </ion-segment-button>
-        <ion-segment-button value="puppies">
+        <ion-segment-button value="share" class="sharebtn">
           煮艺分享家
         </ion-segment-button>
       </ion-segment>
-    </div>
-  </ion-navbar>
+    </ion-col>
+    <ion-col col-2></ion-col>
+  </ion-row>
+
 </ion-header>
 
 
 <ion-content style="padding: 0px">
   <div [ngSwitch]="pet">
-    <ion-list *ngSwitchCase="'kittens'">
+    <ion-list *ngSwitchCase="'dongtai'">
       <ion-row *ngFor="let c of coa" class="header" style="margin-bottom: 30px">
         <ion-col col-12 class="text" style="padding: 10px 0px 0px 0px">
           <img src="{{c.imgurl}}" alt="" style="position: relative;top: 10px;left: 10px;margin-right: 15px">
           {{c.name}}<br><br>
          <span>{{c.title}}</span>
           <span class="s1">{{c.content}}</span><br>
-          <img src="{{c.bigimgurl}}" alt="" style="width: 100%;height: 300px;">
+          <img src="{{c.bigimgurl}}" alt="" style="width: 100%;height: 200px;">
         </ion-col>
       </ion-row>
     </ion-list>
 
-    <ion-list *ngSwitchCase="'puppies'">
+    <ion-list *ngSwitchCase="'share'">
       <ion-row class="share_header" style="height: 100px;">
         <ion-col col-3 class="toux">
-          <img src="http://pic104.nipic.com/file/20160725/23398533_152547047464_2.jpg" alt="">
+          <img src="https://ss0.bdstatic.com/70cFvHSh_Q1YnxGkpoWK1HF6hhy/it/u=4161711008,523627442&fm=117&gp=0.jpg" alt="">
         </ion-col>
         <ion-col col-5 class="zp_text"> <span class="zp_text1">日日煮美食达人招募!</span><span>2017.让我们一起分享你的煮艺</span> </ion-col>
         <ion-col col-3 class="bmBtn">立即报名</ion-col>

@@ -36,10 +36,11 @@ export class CookService{
   };*/
 
 
-  login(){
-    return this.http.get(url)
+  login(uname:string,upsd:string){
+    return this.http.put(url,{uname,upsd})
       .map(res=>{return res.json().data})
   }
+
 
   register(uname:string,upsd:string){
     return this.http.post(url,{uname,upsd})
