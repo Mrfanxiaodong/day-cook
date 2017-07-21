@@ -3,6 +3,7 @@ import {NavController,NavParams} from 'ionic-angular';
 import 'rxjs/add/operator/map';
 import {CookService} from "../../cook.service";
 import { AlertController } from 'ionic-angular';
+import {MycookPage} from "../mycook/mycook";
 
 @Component ({
   selector: 'page-user-center',
@@ -16,14 +17,15 @@ export class UserCenterPage implements OnInit {
   tab: string = 'zc';
   uname: string;
   upsd: string;
-
+  users:string;
 
   constructor(public navCtrl: NavController,
               public navParams: NavParams,
               public cs: CookService,
-              public alertCtrl: AlertController) {
-
-  }
+              public alertCtrl: AlertController)
+          {
+              this.users = navParams.data
+          }
 
   showAlert() {
     let alert = this.alertCtrl.create({
@@ -60,21 +62,31 @@ export class UserCenterPage implements OnInit {
   user=[]
 
   subButton(){
-    if (this.tab == 'zc'){
+    /*注册*/
+    /*if (this.tab == 'zc'){
       console.log(123);
       this.cs.register(this.uname,this.upsd).subscribe(data=>{
         this.showAlert2();
       });
     }else{
+      console.log(456)
+      /!*登录*!/
       this.cs.login(this.uname,this.upsd).subscribe(data=>{
         console.log(data)
         if(data == '您的账号或密码错误'){
           this.showAlert();
         }else{
-          this.navCtrl.pop(UserCenterPage);
+          this.users = this.uname;
+          console.log(this.users)
+          this.navCtrl.push(MycookPage,this.users);
         }
       });
+    }*/
+
+    if (this.tab == 'login'){
+      console.log(123)
+    }else if(this.tab=='zc'){
+      console.log(456)
     }
   }
-
 }
