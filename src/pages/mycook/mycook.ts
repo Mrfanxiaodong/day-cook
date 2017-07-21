@@ -7,8 +7,14 @@ import {UserCenterPage} from "../user-center/user-center";
   templateUrl: 'mycook.html',
 })
 export class MycookPage {
-
+  users:string
   constructor(public navCtrl: NavController, public navParams: NavParams) {
+
+    if (navParams.data.length != null){
+      this.users= navParams.data;
+    }else{
+      this.users = '登录/注册';
+    }
   }
 
   ionViewDidLoad() {
@@ -16,7 +22,8 @@ export class MycookPage {
   }
 
   user(){
-    this.navCtrl.push(UserCenterPage)
+    this.navCtrl.push(UserCenterPage,this.users)
   }
+
 
 }
