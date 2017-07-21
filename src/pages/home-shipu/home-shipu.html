@@ -19,7 +19,7 @@
 
 
 <ion-content>
-  <div class="big">
+  <div class="big" on-swipe="scoll()">
     <div class="navlist">
       <ul>
         <li>
@@ -56,90 +56,91 @@
         </li>
       </ul>
     </div>
-    <!-- 第一部分-->
-    <div class="right" padding>
-      <p class="ptitle">热门</p>
-      <div *ngFor ="let tu of fenlist" class="tul">
-          <ul>
-            <li>
-              <img src="{{tu.imgurl}}" alt="">
-              <p>{{tu.typename}}</p>
-            </li>
-          </ul>
-      </div>
-      <p style="clear: both"></p>
-    </div>
-    <!-- 第一部分-->
-    <!-- 第2部分-->
-    <div class="right" padding>
-      <p class="ptitle">菜式</p>
-      <div *ngFor ="let tu of fenlist_caishi" class="tul">
-        <ul>
-          <li>
-            <img src="{{tu.imgurl}}" alt="">
-            <p>{{tu.typename}}</p>
-          </li>
-        </ul>
-      </div>
-      <p style="clear: both"></p>
-    </div>
-    <!-- 第2部分-->
-    <!--第3部分-->
-    <div class="right" padding>
-      <p class="ptitle">场景</p>
-      <div *ngFor ="let tu of fenlist_cj" class="tul">
-        <ul>
-          <li>
-            <img src="{{tu.imgurl}}" alt="">
-            <p>{{tu.typename}}</p>
-          </li>
-        </ul>
-      </div>
-      <p style="clear: both"></p>
-    </div>
-    <!--第3部分-->
-    <!--第4部分-->
-    <div class="right" padding>
-      <p class="ptitle">食材</p>
-      <div *ngFor ="let tu of fenlist" class="tul">
-        <ul>
-          <li>
-            <img src="{{tu.imgurl}}" alt="">
-            <p>{{tu.typename}}</p>
-          </li>
-        </ul>
-      </div>
-      <p style="clear: both"></p>
-    </div>
-    <!--第4部分-->
-    <!--第5部分-->
-    <div class="right" padding>
-      <p class="ptitle">菜系</p>
-      <div *ngFor ="let tu of fenlist_caishi" class="tul">
-        <ul>
-          <li>
-            <img src="{{tu.imgurl}}" alt="">
-            <p>{{tu.typename}}</p>
-          </li>
-        </ul>
-      </div>
-      <p style="clear: both"></p>
-    </div>
-    <!--第5部分-->
-    <!--第6部分-->
-    <div class="right" padding>
-      <p class="ptitle">烘焙</p>
-      <div *ngFor ="let tu of fenlist_cj" class="tul">
-        <ul>
-          <li>
-            <img src="{{tu.imgurl}}" alt="">
-            <p>{{tu.typename}}</p>
-          </li>
-        </ul>
-      </div>
-      <p style="clear: both"></p>
-    </div>
-    <!--第6部分-->
+    <div class="rightlist" on-swipe="scoll()">
+     <!-- 第一部分-->
+     <div class="right" padding on-swipe="scoll()">
+       <p class="ptitle">热门</p>
+       <div *ngFor ="let tu of fenlist" class="tul">
+         <ul>
+           <li>
+             <img src="{{tu.imgurl}}" alt="">
+             <p>{{tu.typename}}</p>
+           </li>
+         </ul>
+       </div>
+       <p style="clear: both"></p>
+     </div>
+     <!-- 第一部分-->
+     <!-- 第2部分-->
+     <div class="right" padding>
+       <p class="ptitle">菜式</p>
+       <div *ngFor ="let tu of fenlist_caishi" class="tul">
+         <ul>
+           <li>
+             <img src="{{tu.imgurl}}" alt="">
+             <p>{{tu.typename}}</p>
+           </li>
+         </ul>
+       </div>
+       <p style="clear: both"></p>
+     </div>
+     <!-- 第2部分-->
+     <!--第3部分-->
+     <div class="right" padding>
+       <p class="ptitle">场景</p>
+       <div *ngFor ="let tu of fenlist_cj" class="tul">
+         <ul>
+           <li>
+             <img src="{{tu.imgurl}}" alt="">
+             <p>{{tu.typename}}</p>
+           </li>
+         </ul>
+       </div>
+       <p style="clear: both"></p>
+     </div>
+     <!--第3部分-->
+     <!--第4部分-->
+     <div class="right" padding>
+       <p class="ptitle">食材</p>
+       <div *ngFor ="let tu of fenlist" class="tul">
+         <ul>
+           <li>
+             <img src="{{tu.imgurl}}" alt="">
+             <p>{{tu.typename}}</p>
+           </li>
+         </ul>
+       </div>
+       <p style="clear: both"></p>
+     </div>
+     <!--第4部分-->
+     <!--第5部分-->
+     <div class="right" padding>
+       <p class="ptitle">菜系</p>
+       <div *ngFor ="let tu of fenlist_caishi" class="tul">
+         <ul>
+           <li>
+             <img src="{{tu.imgurl}}" alt="">
+             <p>{{tu.typename}}</p>
+           </li>
+         </ul>
+       </div>
+       <p style="clear: both"></p>
+     </div>
+     <!--第5部分-->
+     <!--第6部分-->
+     <div class="right" padding>
+       <p class="ptitle">烘焙</p>
+       <div *ngFor ="let tu of fenlist_cj" class="tul">
+         <ul>
+           <li>
+             <img src="{{tu.imgurl}}" alt="">
+             <p>{{tu.typename}}</p>
+           </li>
+         </ul>
+       </div>
+       <p style="clear: both"></p>
+     </div>
+     <!--第6部分-->
+   </div>
   </div>
 
-</ion-content>

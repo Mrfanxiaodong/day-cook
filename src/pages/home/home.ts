@@ -9,6 +9,7 @@ import {HomeShipuPage} from "../home-shipu/home-shipu";
 import {HomeVideoPage} from "../home-video/home-video";
 import {HomeClassPage} from "../home-class/home-class";
 import {CookactivePage} from "../cookactive/cookactive";
+import {SearchPage} from "../search/search";
 
 @Component({
   selector: 'page-home',
@@ -45,6 +46,12 @@ export class HomePage implements OnInit{
   }
   cookact(){
     this.navCtrl.push(CookactivePage)
+  }
+  search(){
+    this.navCtrl.push(SearchPage)
+  }
+  goabout(){
+    this.navCtrl.parent.select(1)
   }
 
   homevideo(){

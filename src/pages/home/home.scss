@@ -8,10 +8,13 @@ page-home{
     color: gray;
   }
   .hder{
+    width:96%;
+    height: 100%;
     overflow: hidden;
     position: relative;
     padding-left: 30px;
     padding-right: 30px;
+    background-color: white;
   }
   .hder p:nth-child(1){
     position: absolute;
@@ -103,9 +106,10 @@ page-home{
   }
   div.pic{
     height: 170px;
+    text-align: center;
   }
   .pic img{
-    width: 100%;
+    width: 350px;
     height: 100%;
   }
   .item-md{

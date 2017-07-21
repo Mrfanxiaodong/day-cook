@@ -1,9 +1,9 @@
-<ion-header>
-  <ion-navbar>
+<ion-header >
+  <ion-navbar style="padding: 0" margin="0">
     <div style="height: 50px; line-height: 50px;" class="hder">
       <p><ion-icon name="ios-folder-open-outline"></ion-icon></p>
       <p><span><img src="../../assets/icon/logo.png" alt=""></span></p>
-      <p><ion-icon name="ios-search-outline" ></ion-icon></p>
+      <p (click)="search()"><ion-icon name="ios-search-outline" ></ion-icon></p>
     </div>
   </ion-navbar>
 </ion-header>
@@ -102,7 +102,7 @@
       <span class="ziti-mei">当红新菜</span>
     </ion-col>
     <ion-col col-3 class="ziti-hou">
-      <a href="">更多食谱 <ion-icon name="md-arrow-dropright"></ion-icon></a>
+      <a (click)="goabout()">更多食谱 <ion-icon name="md-arrow-dropright"></ion-icon></a>
     </ion-col>
   </ion-row>
   <!--当红新蔡字体-->

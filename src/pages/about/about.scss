@@ -33,22 +33,26 @@ page-about {
     margin: 0;
     padding: 0;
   }
-  .lists{
+  div.lists{
     width: 100%;
     height: 30px;
     overflow-x: auto;
+    position: fixed;
+    top: 60px;
+    z-index: 999;
+    background-color: seashell;
   }
   .lists ul{
     list-style: none;
     display: block;
-    width: 400px;
+    width: 600px;
     height: 30px;
   }
   .lists ul li{
     width: 50px;
     height: 30px;
     margin-left: 10px;
-    border: 1px solid #f7f7f7;border-radius: 20px;
+    border: 1px solid grey;border-radius: 20px;
     line-height: 30px;
     text-align: center;
     float: left;
@@ -64,6 +68,7 @@ page-about {
     width: 50%;
     height: 200px;
     margin-bottom: 150px;
+    margin-top: 20px;
     float: left;
   }
 }

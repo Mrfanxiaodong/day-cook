@@ -34,4 +34,8 @@ export class HomeShipuPage implements OnInit{
       this.fenlist_cj = data;
     });
   }
+  scoll(){
+    console.log('ni')
+  }
+
 }
