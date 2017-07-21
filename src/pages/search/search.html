@@ -3,11 +3,11 @@
     <ion-col col-10>
       <div class="sousuokuang">
         <ion-icon style="margin-top: 8px; margin-left: 8px; float: left" ios="ios-search"></ion-icon>
-        <input (onpropertychange)="getItems()" [(ngModel)]="li" class="sousuokuang-input" type="search" placeholder="输入菜谱/食材/菜系" autocomplete="off" autocorrect="off" spellcheck="false">
+        <input (input)="getItems()" [(ngModel)]="li" class="sousuokuang-input" type="search" placeholder="输入菜谱/食材/菜系" autocomplete="off" autocorrect="off" spellcheck="false">
       </div>
     </ion-col>
     <ion-col col-2 (click)="back()">
-      <p style="width:30px;height: 16px">取消</p>
+      <p style="width:30px;height: 16px">{{shao}}</p>
     </ion-col>
   </ion-row>
   <ion-list>

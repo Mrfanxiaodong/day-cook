@@ -25,6 +25,7 @@ import {HomeVideoPage} from "../pages/home-video/home-video";
 
 import {HomeClassPage} from "../pages/home-class/home-class";
 import {CookactivePage} from "../pages/cookactive/cookactive";
+import {SearchonePage} from "../pages/searchone/searchone";
 
 @NgModule({
   declarations: [
@@ -46,7 +47,8 @@ import {CookactivePage} from "../pages/cookactive/cookactive";
     HomeVideoPage,
     FoundCenterPage,
     HomeClassPage,
-    CookactivePage
+    CookactivePage,
+    SearchonePage,
   ],
   imports: [
     BrowserModule,HttpModule,
@@ -76,6 +78,7 @@ import {CookactivePage} from "../pages/cookactive/cookactive";
     HomeVideoPage,
     FoundCenterPage,
     HomeClassPage,
+    SearchonePage,
   ],
   providers: [
     StatusBar,
