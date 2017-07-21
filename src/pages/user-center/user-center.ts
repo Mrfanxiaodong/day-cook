@@ -2,25 +2,44 @@ import {Component,OnInit} from '@angular/core';
 import {NavController,NavParams} from 'ionic-angular';
 import 'rxjs/add/operator/map';
 import {CookService} from "../../cook.service";
+import { AlertController } from 'ionic-angular';
 
 @Component ({
   selector: 'page-user-center',
   templateUrl: 'user-center.html',
 })
 export class UserCenterPage implements OnInit {
+  ngOnInit (): void {
+
+}
 
   tab: string = 'zc';
   uname: string;
   upsd: string;
 
-  ngOnInit(): void {
-
-  }
 
   constructor(public navCtrl: NavController,
               public navParams: NavParams,
-              public cs: CookService) {
+              public cs: CookService,
+              public alertCtrl: AlertController) {
 
+  }
+
+  showAlert() {
+    let alert = this.alertCtrl.create({
+      title: '尊敬的用户,您好!',
+      subTitle: '您的账号或密码错误,请重新输入!',
+      buttons: ['OK']
+    });
+    alert.present();
+  }
+  showAlert2() {
+    let alert = this.alertCtrl.create({
+      title: '尊敬的用户,您好!',
+      subTitle: '您已经注册成功,请登录！',
+      buttons: ['OK']
+    });
+    alert.present();
   }
 
   ionViewDidLoad() {
@@ -44,18 +63,15 @@ export class UserCenterPage implements OnInit {
     if (this.tab == 'zc'){
       console.log(123);
       this.cs.register(this.uname,this.upsd).subscribe(data=>{
+        this.showAlert2();
       });
     }else{
-      this.cs.login().subscribe(data=>{
-
-        for (var i=0;i<data.length;i++){
-          console.log(data[i]);
-          console.log(data[i].uname,data[i].upsd);
-          if (this.uname==data[i].uname && this.upsd == data[i].upsd){
-            this.navCtrl.pop (UserCenterPage);
-          }else{
-            console.log('账号或密码错误')
-          }
+      this.cs.login(this.uname,this.upsd).subscribe(data=>{
+        console.log(data)
+        if(data == '您的账号或密码错误'){
+          this.showAlert();
+        }else{
+          this.navCtrl.pop(UserCenterPage);
         }
       });
     }

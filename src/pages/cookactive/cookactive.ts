@@ -1,6 +1,7 @@
 import {Component,OnInit} from '@angular/core';
 import { NavController, NavParams } from 'ionic-angular';
 import {CookService} from "../../cook.service";
+import {HomePage} from "../home/home";
 
 @Component({
   selector: 'page-cookactive',
@@ -14,7 +15,7 @@ export class CookactivePage implements OnInit{
               public navParams: NavParams,
               public cs:CookService)
     {
-      this.pet = 'kittens'
+      this.pet = 'dongtai'
     }
 
   ngOnInit(): void {
@@ -34,6 +35,8 @@ export class CookactivePage implements OnInit{
   ionViewDidLoad() {
     console.log('ionViewDidLoad CookactivePage');
   }
-
+  back(){
+    this.navCtrl.pop(HomePage)
+  }
 
 }
