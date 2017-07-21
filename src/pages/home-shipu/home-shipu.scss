@@ -5,12 +5,20 @@ page-home-shipu {
   }
   .hd{
     text-align: center;
+    padding-right: 50px;
+    position: relative;
   }
   .itt{
     display: inline-block;
-    width: 90%;
-    padding-right: 30px;
-    box-sizing: border-box;
+    width: 100%;
+    text-align: center;
+  }
+  .itt1{
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: inline-block;
+    width: 50px;
   }
   .big{
     width: 100%;
