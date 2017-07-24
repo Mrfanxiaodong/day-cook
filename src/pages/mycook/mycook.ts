@@ -22,8 +22,12 @@ export class MycookPage {
   }
 
   user(){
-    this.navCtrl.push(UserCenterPage,this.users)
-  }
+    if (this.navParams.data.length != null){
 
+    }else{
+      this.navCtrl.push(UserCenterPage)
+    }
+
+  }
 
 }

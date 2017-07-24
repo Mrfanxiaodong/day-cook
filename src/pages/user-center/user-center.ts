@@ -38,7 +38,7 @@ export class UserCenterPage implements OnInit {
   showAlert2() {
     let alert = this.alertCtrl.create({
       title: '尊敬的用户,您好!',
-      subTitle: '您已经注册成功,请登录！',
+      subTitle: '您已经注册成功！',
       buttons: ['OK']
     });
     alert.present();
@@ -63,14 +63,16 @@ export class UserCenterPage implements OnInit {
 
   subButton(){
     /*注册*/
-    /*if (this.tab == 'zc'){
+    if (this.tab == 'zc'){
       console.log(123);
       this.cs.register(this.uname,this.upsd).subscribe(data=>{
+        this.users = this.uname;
         this.showAlert2();
+        this.navCtrl.setRoot(MycookPage,this.users);
       });
     }else{
-      console.log(456)
-      /!*登录*!/
+      console.log(456);
+      /*登录*/
       this.cs.login(this.uname,this.upsd).subscribe(data=>{
         console.log(data)
         if(data == '您的账号或密码错误'){
@@ -78,15 +80,15 @@ export class UserCenterPage implements OnInit {
         }else{
           this.users = this.uname;
           console.log(this.users)
-          this.navCtrl.push(MycookPage,this.users);
+          this.navCtrl.setRoot(MycookPage,this.users);
         }
       });
-    }*/
+    }
 
-    if (this.tab == 'login'){
+   /* if (this.tab == 'login'){
       console.log(123)
     }else if(this.tab=='zc'){
       console.log(456)
-    }
+    }*/
   }
 }

@@ -37,15 +37,16 @@ export class CookService{
 
 
   login(uname:string,upsd:string){
-    return this.http.put(url,{uname,upsd})
+    return this.http.post(url+'/login',{uname,upsd})
       .map(res=>{return res.json().data})
   }
-
 
   register(uname:string,upsd:string){
-    return this.http.post(url,{uname,upsd})
+    return this.http.post(url+'/register',{uname,upsd})
       .map(res=>{return res.json().data})
   }
+
+
   allfound(){
     return this.http.get('http://localhost:3000/dds/f')
       .map(res=>res.json().data)
