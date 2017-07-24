@@ -1,5 +1,7 @@
 import { Component } from '@angular/core';
 import { NavController, NavParams } from 'ionic-angular';
+import {CookService} from "../../cook.service";
+import {SearchonePage} from "../searchone/searchone";
 
 @Component({
   selector: 'page-search',
