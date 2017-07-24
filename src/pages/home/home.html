@@ -63,7 +63,7 @@
         <span class="ziti-mei">每日新菜馆</span>
       </ion-col>
       <ion-col col-3 class="ziti-hou">
-        <a (click)="goabout()">更多食谱 <ion-icon name="md-arrow-dropright"></ion-icon></a>
+        <a (click)="goabout()">更多食谱<ion-icon name="md-arrow-dropright"></ion-icon></a>
       </ion-col>
     </ion-row>
   <!--每日新蔡字体-->
@@ -140,11 +140,11 @@
       <span class="ziti-mei">美食全攻略</span>
     </ion-col>
   </ion-row>
+
   <!--最下面图片-->
   <div *ngFor="let pic of d_morepic" class="pic" (click)="gohome_two_cai2(pic)">
     <img src="{{pic.imgurl}}" alt="">
   </div>
   <!--最下面图片-->
-
 
 </ion-content>

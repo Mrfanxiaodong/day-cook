@@ -22,10 +22,23 @@ import {HomeTwoCai2Page} from "../pages/home-two-cai2/home-two-cai2";
 import {FoundCenterPage} from "../pages/found-center/found-center";
 import {HomeShipuPage} from "../pages/home-shipu/home-shipu";
 import {HomeVideoPage} from "../pages/home-video/home-video";
-
 import {HomeClassPage} from "../pages/home-class/home-class";
 import {CookactivePage} from "../pages/cookactive/cookactive";
-import {SearchonePage} from "../pages/searchone/searchone";
+import {CollectionPage} from "../pages/collection/collection";
+import {SetUpPage} from "../pages/set-up/set-up";
+import {NoticePage} from "../pages/notice/notice";
+import {ShoppingCartPage} from "../pages/shopping-cart/shopping-cart";
+import {FuliPage} from "../pages/fuli/fuli";
+import {OrderPage} from "../pages/order/order";
+import {KechengPage} from "../pages/kecheng/kecheng";
+import {SignPage} from "../pages/sign/sign";
+import {FootPage} from "../pages/foot/foot";
+import {AddressPage} from "../pages/address/address";
+import {ProblemPage} from "../pages/problem/problem";
+import {YijianPage} from "../pages/yijian/yijian";
+import {TouxiangPage} from "../pages/touxiang/touxiang";
+import {GuanzhuPage} from "../pages/guanzhu/guanzhu";
+import {FengchePage} from "../pages/fengche/fengche";
 
 @NgModule({
   declarations: [
@@ -48,7 +61,21 @@ import {SearchonePage} from "../pages/searchone/searchone";
     FoundCenterPage,
     HomeClassPage,
     CookactivePage,
-    SearchonePage,
+    SetUpPage,
+    NoticePage,
+    TouxiangPage,
+    GuanzhuPage,
+    FengchePage,
+    CollectionPage,
+    ShoppingCartPage,
+    FuliPage,
+    OrderPage,
+    KechengPage,
+    SignPage,
+    FootPage,
+    AddressPage,
+    ProblemPage,
+    YijianPage
   ],
   imports: [
     BrowserModule,HttpModule,
@@ -78,7 +105,21 @@ import {SearchonePage} from "../pages/searchone/searchone";
     HomeVideoPage,
     FoundCenterPage,
     HomeClassPage,
-    SearchonePage,
+    SetUpPage,
+    NoticePage,
+    TouxiangPage,
+    GuanzhuPage,
+    FengchePage,
+    CollectionPage,
+    ShoppingCartPage,
+    FuliPage,
+    OrderPage,
+    KechengPage,
+    SignPage,
+    FootPage,
+    AddressPage,
+    ProblemPage,
+    YijianPage
   ],
   providers: [
     StatusBar,
