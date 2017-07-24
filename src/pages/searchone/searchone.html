@@ -1,0 +1,34 @@
+<ion-content>
+  <ion-row>
+    <ion-col col-1 style="margin-top: 15px;margin-left: 10px;" (click)="back()">
+      <img src="../../assets/icon/close1.png" alt="" style="width:16px;height: 16px">
+    </ion-col>
+    <ion-col col-10>
+      <div class="sousuokuang">
+        <ion-icon style="margin-top: 8px; margin-left: 8px; float: left" ios="ios-search"></ion-icon>
+        <!--<input (input)="getItems()" [(ngModel)]="li" class="sousuokuang-input" readonly placeholder="{{canshu}}" type="text" autocomplete="off" autocorrect="off" spellcheck="false">-->
+        <p style="text-align: left; line-height: 30px; height: 30px;margin-top: 1px; margin-left:10px;float: left">{{canshu}}</p>
+        <a (click)="searchoneback()" style="color: black;"><ion-icon style="margin-top: 8px; margin-left: 8px; float: left" ios="ios-backspace"></ion-icon></a>
+      </div>
+    </ion-col>
+
+    <ul>
+      <li *ngFor="let hero of canshu2" class="tutu">
+        <ion-card class="cards" >
+          <img src="{{hero.imgurl}}">
+          <ion-item >
+            <p>{{hero.line_title}}</p>
+          </ion-item>
+          <ion-item >
+            <p>{{hero.line_dtail}}</p>
+          </ion-item>
+          <ion-item>
+            <span item-left><ion-icon name="ios-heart-outline"></ion-icon></span>
+            <span item-left><ion-icon name="ios-eye-outline"></ion-icon></span>
+            <span item-left>{{hero.line_num}}</span>
+          </ion-item>
+        </ion-card>
+      </li>
+    </ul>
+  </ion-row>
+</ion-content>
