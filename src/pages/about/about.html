@@ -32,7 +32,8 @@
     <ion-item *ngFor="let i of items">
       <div>
         <ul *ngFor="let ck of allpic" class="tutu">
-          <li>  <ion-card class="cards" >
+          <li>
+            <ion-card class="cards" >
             <img src="{{ck.imgurl}}">
             <ion-item >
               <p>{{ck.line_title}}</p>
@@ -45,7 +46,8 @@
               <span item-left><ion-icon name="ios-eye-outline"></ion-icon></span>
               <span item-left>{{ck.line_num}}</span>
             </ion-item>
-          </ion-card></li>
+          </ion-card>
+          </li>
         </ul>
       </div>
     </ion-item>
