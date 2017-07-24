@@ -3,6 +3,7 @@ import {Http} from "@angular/http";
 const url = 'http://localhost:3000/users';
 @Injectable()
 export class CookService{
+  loginname:string;
   constructor(public http:Http) {}
 
   all_p(){
@@ -38,7 +39,10 @@ export class CookService{
 
   login(uname:string,upsd:string){
     return this.http.post(url+'/login',{uname,upsd})
-      .map(res=>{return res.json().data})
+      .map(res=>{
+
+        return res.json().data
+      })
   }
 
   register(uname:string,upsd:string){

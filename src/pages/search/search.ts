@@ -1,13 +1,5 @@
 import { Component } from '@angular/core';
 import { NavController, NavParams } from 'ionic-angular';
-import {SearchonePage} from "../searchone/searchone";
-
-/**
- * Generated class for the SearchPage page.
- *
- * See http://ionicframework.com/docs/components/#navigation for more info
- * on Ionic pages and navigation.
- */
 
 @Component({
   selector: 'page-search',
@@ -25,14 +17,6 @@ export class SearchPage {
     console.log('ionViewDidLoad SearchPage')
   }
 
-  back(){
-    if(this.shao == '取消'){
-      this.navCtrl.pop(SearchPage)
-    }else{
-      this.navCtrl.push(SearchonePage,this.li)
-    }
-
-  }
 
   // 搜索框
   getItems(){
@@ -44,7 +28,4 @@ export class SearchPage {
     }
 
   }
-
-
-
 }
