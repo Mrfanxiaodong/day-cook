@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { NavController, NavParams } from 'ionic-angular';
 import {CookService} from "../../cook.service";
+import {FoundCenterPage} from "../found-center/found-center";
 @Component({
   selector: 'page-home-video',
   templateUrl: 'home-video.html',
@@ -21,6 +22,9 @@ export class HomeVideoPage {
   back(){
     this.navCtrl.pop(this.HomeVideoPage)
 
+  }
+  founder(params?:object){
+    this.navCtrl.push(FoundCenterPage,{cai:params})
   }
 
   ngOnInit(): void {

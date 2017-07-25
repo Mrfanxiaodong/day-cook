@@ -34,6 +34,12 @@ export class CookService{
     return this.http.post('http://localhost:3000/dds/fasong',{li:li})
       .map(res=>res.json().data)
   }
+  fankui(name:string,cont:string){
+    return this.http.post('http://localhost:3000/dds/fankui',{cont:cont,name:name})
+      .map(res=>res=>{
+        return res.json().data
+      })
+  }
 
 
 

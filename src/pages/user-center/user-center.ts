@@ -59,6 +59,10 @@ export class UserCenterPage implements OnInit {
   }
 
   user=[]
+  opinion(){
+
+  }
+
 
   subButton(){
     /*注册*/

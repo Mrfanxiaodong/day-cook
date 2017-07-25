@@ -7,12 +7,17 @@
 <ion-header>
 
   <ion-navbar>
-    <ion-title>yijian</ion-title>
+    <ion-title>意见反馈</ion-title>
   </ion-navbar>
 
 </ion-header>
 
 
 <ion-content padding>
-
+  <form>
+    <textarea name="" cols="30" rows="10" placeholder="请填写您的建议" #name></textarea><br>
+    <p>您的联系方式(选填):</p>
+    <textarea name="" cols="30" rows="10" placeholder="邮箱，手机或QQ" #cont></textarea>
+    <button type="submit" (click)="addopinion(cont,name); cont.value='';name.value='';">提交</button>
+  </form>
 </ion-content>

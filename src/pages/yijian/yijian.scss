@@ -1,3 +1,22 @@
 page-yijian {
-
+  ion-content{
+    font-size:16px;
+  }
+  ion-content textarea{
+    border: none;
+    width: 100%;
+    height: 250px;
+    text-align: left;
+    resize : none;
+  }
+  ion-content button{
+    position: fixed;
+    bottom:0;
+    width: 100%;
+    background-color: orange;
+    height: 50px;
+    left:0;
+    font-size:18px;
+    color: white;
+  }
 }
