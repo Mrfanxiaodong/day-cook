@@ -1,5 +1,14 @@
 import { Component } from '@angular/core';
 import { NavController, NavParams } from 'ionic-angular';
+import {CookService} from "../../cook.service";
+import {SearchonePage} from "../searchone/searchone";
+
+/**
+ * Generated class for the SearchPage page.
+ *
+ * See http://ionicframework.com/docs/components/#navigation for more info
+ * on Ionic pages and navigation.
+ */
 
 @Component({
   selector: 'page-search',
@@ -7,25 +16,43 @@ import { NavController, NavParams } from 'ionic-angular';
 })
 export class SearchPage {
   shao:string;
-  constructor(public navCtrl: NavController, public navParams: NavParams) {
+  constructor(
+    public navCtrl: NavController,
+    public navParams: NavParams,
+    public cs:CookService) {
     this.shao = '取消';
   }
   li:string;
+  zhan:string;
 
 
   ionViewDidLoad() {
     console.log('ionViewDidLoad SearchPage')
   }
 
+  back(){
+    if(this.shao == '取消'){
+      this.navCtrl.pop(SearchPage)
+    }else{
+      this.navCtrl.push(SearchonePage,{li:this.li,zhan:this.zhan})
+    }
+
+  }
+
 
   // 搜索框
   getItems(){
-    console.log(this.li)
+    console.log(this.li);
+    this.cs.fasong(this.li).subscribe(data=>{
+      console.log(data);
+      this.zhan = data;
+    });
     if(this.li){
       this.shao = '搜索';
     }else{
       this.shao = '取消';
     }
+
 
   }
 }

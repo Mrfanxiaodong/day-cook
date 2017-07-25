@@ -14,6 +14,10 @@ export class CookService{
     return this.http.get('http://localhost:3000/dds/class')
       .map(res=>res.json().data)
   }
+  fenlist(){
+    return this.http.get('http://localhost:3000/dds/fenlist')
+      .map(res=>res.json().data)
+  }
   all_seven(){
     return this.http.get('http://localhost:3000/dds')
       .map(res=>res.json().data)
@@ -25,6 +29,16 @@ export class CookService{
   alld_seventwo(){
     return this.http.get('http://localhost:3000/dds/d_w')
       .map(res=>res.json().data)
+  }
+  fasong(li:string){
+    return this.http.post('http://localhost:3000/dds/fasong',{li:li})
+      .map(res=>res.json().data)
+  }
+  fankui(name:string,cont:string){
+    return this.http.post('http://localhost:3000/dds/fankui',{cont:cont,name:name})
+      .map(res=>res=>{
+        return res.json().data
+      })
   }
 
 

@@ -39,6 +39,7 @@ import {YijianPage} from "../pages/yijian/yijian";
 import {TouxiangPage} from "../pages/touxiang/touxiang";
 import {GuanzhuPage} from "../pages/guanzhu/guanzhu";
 import {FengchePage} from "../pages/fengche/fengche";
+import {SearchonePage} from "../pages/searchone/searchone";
 
 @NgModule({
   declarations: [
@@ -75,7 +76,8 @@ import {FengchePage} from "../pages/fengche/fengche";
     FootPage,
     AddressPage,
     ProblemPage,
-    YijianPage
+    YijianPage,
+    SearchonePage
   ],
   imports: [
     BrowserModule,HttpModule,
@@ -119,7 +121,8 @@ import {FengchePage} from "../pages/fengche/fengche";
     FootPage,
     AddressPage,
     ProblemPage,
-    YijianPage
+    YijianPage,
+    SearchonePage
   ],
   providers: [
     StatusBar,
