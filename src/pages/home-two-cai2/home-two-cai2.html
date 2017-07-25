@@ -24,9 +24,15 @@
   <p padding>{{caidetail.line_title}}来啦</p>
   <p padding><ion-icon name="ios-clock-outline"></ion-icon> 烹饪时间：1小时</p>
   <p padding><ion-icon name="ios-bonfire-outline"></ion-icon> 食材</p>
+  <ul class="cc" padding>
+    <li *ngFor="let n of onlydata">
+      <p>匿名：{{n.pinglun}}</p>
+    </li>
+  </ul>
 
-  <form padding>
-    <input type="text"  placeholder="我有话要说..">
+
+  <form padding >
+    <input type="text"  placeholder="我有话要说.." name="inpvalue" (change)="showPrompt()" [(ngModel)]="inpvalue">
     <ion-icon name="ios-heart-outline"></ion-icon>
     <ion-icon name="ios-chatbubbles-outline"></ion-icon>
   </form>

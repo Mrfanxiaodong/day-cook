@@ -18,52 +18,52 @@
 </ion-header>
 
 
-<ion-content>
-  <div class="big" on-swipe="scoll()">
+<ion-content  >
+  <div class="big" >
     <div class="navlist">
       <ul>
-        <li>
+        <li [class.selected]="selfscrolltop>=0&&selfscrolltop<=600">
           <p>
             <ion-icon name="ios-flame-outline"></ion-icon>
             <br>
             热门
           </p>
         </li>
-        <li>
+        <li [class.selected]="selfscrolltop>=600&&selfscrolltop<1200">
           <ion-icon name="ios-basket-outline"></ion-icon>
           <br>
           菜式
         </li>
-        <li>
+        <li [class.selected]="selfscrolltop>=1200&&selfscrolltop<=1949" >
           <ion-icon name="ios-wine-outline"> </ion-icon>
           <br>
           场景
         </li>
-        <li>
+        <li [class.selected]="selfscrolltop>=1950&&selfscrolltop<=2556">
           <ion-icon name="ios-beer-outline"></ion-icon>
           <br>
           食材
         </li>
-        <li>
+        <li [class.selected]="selfscrolltop>=2557&&selfscrolltop<=3136">
           <ion-icon name="ios-pizza-outline"></ion-icon>
           <br>
           菜系
         </li>
-        <li>
+        <li [class.selected]="selfscrolltop>3136">
           <ion-icon name="ios-bonfire-outline"></ion-icon>
           <br>
           烘焙
         </li>
       </ul>
     </div>
-    <div class="rightlist" on-swipe="scoll()">
+    <div class="rightlist">
      <!-- 第一部分-->
-     <div class="right" padding on-swipe="scoll()">
+     <div class="right rt" padding  >
        <p class="ptitle">热门</p>
-       <div *ngFor ="let tu of fenlist" class="tul">
-         <ul>
-           <li>
-             <img src="{{tu.imgurl}}" alt="">
+       <div *ngFor ="let tu of fenlist" class="tul" >
+         <ul >
+           <li >
+             <img src="{{tu.imgurl}}" >
              <p>{{tu.typename}}</p>
            </li>
          </ul>

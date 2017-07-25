@@ -15,7 +15,6 @@ page-home-two-cai {
     border-bottom: 1px solid gray;
   }
   .las{
-    margin-bottom: 50px;
     width: 100%;
     border-bottom: 1px solid gray;
   }
@@ -26,13 +25,19 @@ page-home-two-cai {
   }
   form input{
     border-radius: 10px;
-    border: none;
     display: inline-block;
     width: 80%;
     height: 30px;
-    background-color: #f8f8f8;
+    background-color: transparent;
+    //opacity:0.2;
+    border: 1px solid lightblue;
   }
   form ion-icon{
     font-size: 25px;
+  }
+  .cc{
+    position:relative;
+    z-index: 333;
+    list-style: none
   }
 }

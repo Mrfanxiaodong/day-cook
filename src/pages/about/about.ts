@@ -9,14 +9,8 @@ import {SearchPage} from "../search/search";
 })
 export class AboutPage implements OnInit{
   allpic = [];
-  items = [];
   constructor(public navCtrl: NavController,public cs:CookService)
   {
-    for (let i = 0; i < 1; i++) {
-
-      this.items.push( this.items.length );
-    }
-    console.log(this.items)
   }
   ngOnInit():void{
     this.cs.all_p().subscribe(data=>{
@@ -26,17 +20,6 @@ export class AboutPage implements OnInit{
   }
   search(){
     this.navCtrl.push(SearchPage)
-  }
-  doInfinite(infiniteScroll) {
-    console.log('Begin async operation');
-
-    setTimeout(() => {
-      for (let i = 0; i < 1; i++) {
-        this.items.push( this.items.length );
-      }
-      console.log('Async operation has ended');
-      infiniteScroll.complete();
-    }, 2000);
   }
 
 }

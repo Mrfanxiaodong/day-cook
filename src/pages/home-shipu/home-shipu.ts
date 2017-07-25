@@ -1,5 +1,5 @@
-import {Component, OnInit} from '@angular/core';
-import { NavController, NavParams } from 'ionic-angular';
+import {Component, OnInit, ViewChild, NgZone, ChangeDetectorRef} from '@angular/core';
+import { NavController, NavParams,Content } from 'ionic-angular';
 import {CookService} from "../../cook.service";
 
 /**
@@ -14,15 +14,30 @@ import {CookService} from "../../cook.service";
   templateUrl: 'home-shipu.html',
 })
 export class HomeShipuPage implements OnInit{
+  @ViewChild('#rlist') list;
+  @ViewChild(Content) content:Content;
   fenlist;
   fenlist_caishi;
   fenlist_cj;
-  constructor(public navCtrl: NavController, public navParams: NavParams, public cs:CookService) {
+  selfscrolltop:number;
+
+  constructor(public navCtrl: NavController,
+              public navParams: NavParams,
+              public cs:CookService,
+              public ref:ChangeDetectorRef
+  ) {
+
   }
 
   ionViewDidLoad() {
-    console.log('ionViewDidLoad HomeShipuPage');
+    this.content.ionScroll.subscribe(($event:any)=>{
+      let top =$event.scrollTop;
+      this.selfscrolltop=top;
+      console.log(this.selfscrolltop);
+      this.ref.detectChanges();
+    })
   }
+
   ngOnInit(): void {
     this.cs.all_seven().subscribe(data => {
       this.fenlist = data;
@@ -33,9 +48,6 @@ export class HomeShipuPage implements OnInit{
     this.cs.all_sevenmore().subscribe(data => {
       this.fenlist_cj = data;
     });
-  }
-  scoll(){
-    console.log('ni')
-  }
 
+    }
 }

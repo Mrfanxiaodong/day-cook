@@ -28,8 +28,6 @@
   <!--导航栏-->
   <!--图片集-->
 
-  <ion-list>
-    <ion-item *ngFor="let i of items">
       <div>
         <ul *ngFor="let ck of allpic" class="tutu">
           <li>
@@ -50,11 +48,4 @@
           </li>
         </ul>
       </div>
-    </ion-item>
-  </ion-list>
-
-  <ion-infinite-scroll (ionInfinite)="doInfinite($event)">
-    <ion-infinite-scroll-content></ion-infinite-scroll-content>
-  </ion-infinite-scroll>
-
 </ion-content>

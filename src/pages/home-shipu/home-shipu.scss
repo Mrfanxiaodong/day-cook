@@ -42,17 +42,16 @@ page-home-shipu {
   }
   .navlist ul li{
     width: 95px;
-    height: 100px;
+    height: 80px;
     padding-top: 20px;
     box-sizing: border-box;
     text-align: center;
     font-size: 16px;
   }
-  .navlist ul li:nth-child(1){
-    background-color: coral;
-  }
   .rightlist{
     width: 100%;
+    height: 1000px;
+    position: relative;
   }
   .right{
     width: 100%;
@@ -80,5 +79,8 @@ page-home-shipu {
   .tul img{
     width: 100px;
     height: 100px;
+  }
+  .selected{
+    background-color: red;
   }
 }
