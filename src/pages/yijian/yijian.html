@@ -18,6 +18,6 @@
     <textarea name="" cols="30" rows="10" placeholder="请填写您的建议" #name></textarea><br>
     <p>您的联系方式(选填):</p>
     <textarea name="" cols="30" rows="10" placeholder="邮箱，手机或QQ" #cont></textarea>
-    <button type="submit" (click)="addopinion(cont,name); cont.value='';name.value='';">提交</button>
+    <button type="submit" (click)="showToast(cont,name,'middle'); cont.value='';name.value='';">提交建议</button>
   </form>
 </ion-content>

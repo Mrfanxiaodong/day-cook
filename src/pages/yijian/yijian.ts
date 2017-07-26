@@ -1,5 +1,5 @@
-import { Component } from '@angular/core';
-import { NavController, NavParams } from 'ionic-angular';
+import {Component, ViewChild} from '@angular/core';
+import {NavController, NavParams, ToastController} from 'ionic-angular';
 import {CookService} from "../../cook.service";
 
 /**
@@ -14,29 +14,32 @@ import {CookService} from "../../cook.service";
   templateUrl: 'yijian.html',
 })
 export class YijianPage {
-  name:string;
-  cont:string;
+
+
+
 
   showxianshi(){
       alert("提交成功~");
   }
-  showxianshi2(){
-      alert("要写内容哦~");
-  }
-  constructor(public navCtrl: NavController, public navParams: NavParams,public cs: CookService,) {
+  constructor(public navCtrl: NavController, public navParams: NavParams,public cs: CookService,public toastCtrl: ToastController) {
   }
 
   ionViewDidLoad() {
     console.log('ionViewDidLoad YijianPage');
   }
-  addopinion(cont:HTMLInputElement,name:HTMLInputElement){
+  showToast(cont:HTMLInputElement,name:HTMLInputElement,position: string){
     console.log(cont.value,name.value);
+    let toast = this.toastCtrl.create({
+      message: '收到您的建议啦~',
+      duration: 2000,
+      position: position
+    });
+
+    toast.present(toast);
       this.cs.fankui(cont.value,name.value).subscribe(data=>{
-        this.showxianshi();
+
       });
-    }
-
-
+  }
 
 
 }

@@ -36,7 +36,7 @@ export class CookService{
   }
   fankui(name:string,cont:string){
     return this.http.post('http://localhost:3000/dds/fankui',{cont:cont,name:name})
-      .map(res=>res=>{
+      .map(res=>{
         return res.json().data
       })
   }
