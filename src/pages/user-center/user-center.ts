@@ -4,6 +4,7 @@ import 'rxjs/add/operator/map';
 import {CookService} from "../../cook.service";
 import { AlertController } from 'ionic-angular';
 import {MycookPage} from "../mycook/mycook";
+import {ContactPage} from "../contact/contact";
 
 @Component ({
   selector: 'page-user-center',

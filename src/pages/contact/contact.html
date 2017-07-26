@@ -157,11 +157,11 @@
     </ion-col>
   </ion-row>
   <div class="prodectlist">
-    <ul (click)="productlist()">
-      <li>
+    <ul>
+      <li (click)="productlist()">
         <img src="../../assets/icon/niuyou.png">
-        <p>墨西哥进口牛油</p>
-        <p style="color: red">￥59.0</p>
+        <p>{{productname}}</p>
+        <p style="color: red">￥{{productjiage}}</p>
       </li>
       <li>
         <img src="../../assets/icon/jinkouxiyou.png">

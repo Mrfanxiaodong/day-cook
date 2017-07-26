@@ -5,7 +5,9 @@ import {CookService} from "../../cook.service";
 /**
  * Generated class for the YijianPage page.
  *
- * See http://ionicframework.com/docs/components/#navigation for more info
+ * See http://ionicframework.com/docs/components/#navigation
+
+ for more info
  * on Ionic pages and navigation.
  */
 
@@ -19,7 +21,7 @@ export class YijianPage {
 
 
   showxianshi(){
-      alert("提交成功~");
+    alert("提交成功~");
   }
   constructor(public navCtrl: NavController, public navParams: NavParams,public cs: CookService,public toastCtrl: ToastController) {
   }
@@ -36,9 +38,9 @@ export class YijianPage {
     });
 
     toast.present(toast);
-      this.cs.fankui(cont.value,name.value).subscribe(data=>{
+    this.cs.fankui(cont.value,name.value).subscribe(data=>{
 
-      });
+    });
   }
 
 

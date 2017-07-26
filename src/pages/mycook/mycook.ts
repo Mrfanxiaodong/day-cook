@@ -46,16 +46,19 @@ export class MycookPage {
   ]
 
   constructor(public navCtrl: NavController,public navParams: NavParams) {
-
-    if (navParams.data.length != null) {
+    if(navParams.data == ''){
+      this.isLogin=false;
+      this.number = 0;
+    }else if (navParams.data.length != null) {
       this.users = navParams.data;
       this.number = 4;
       this.show = true;
       this.isLogin=true;
-    } else {
+    }else {
       this.users = '登录/注册';
       this.number = 0;
-      this.show = false
+      this.show = false;
+      this.isLogin=false;
     }
   }
 
@@ -64,6 +67,7 @@ export class MycookPage {
   }
 
   user(num) {
+    console.log(this.isLogin);
     if (this.isLogin) {
       this.navCtrl.push (this.pageString[num]);
     } else {

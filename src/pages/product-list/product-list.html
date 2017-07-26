@@ -1,11 +1,42 @@
 <ion-header>
   <ion-navbar>
     <ion-title>
-      product-list
+      {{name}}
     </ion-title>
   </ion-navbar>
 </ion-header>
+<ion-content>
+  <img src="../../assets/niuyou.jpg" alt="">
+  <ion-col>
+    <p style="font-size: 16px; text-align: center; margin: 0;">{{name}}</p>
+    <p style="font-size: 16px; text-align: center;margin-top: 5px;">6个/8个装 单果130g-160g</p>
+    <p style="font-size: 16px; text-align: center;margin-top: 8px;color: red;">￥{{jiage}}</p>
+  </ion-col>
+  <img src="../../assets/niuyou1.jpg" alt="">
+  <img src="../../assets/niuyou2.jpg" alt="">
+  <img src="../../assets/niuyou3.jpg" alt="">
+  <img src="../../assets/niuyou4.jpg" alt="">
+  <img src="../../assets/niuyou5.jpg" alt="">
+  <img src="../../assets/niuyou6.jpg" alt="">
+  <img src="../../assets/niuyou7.jpg" alt="">
+  <img src="../../assets/niuyou8.jpg" alt="">
+  <img src="../../assets/niuyou9.jpg" alt="">
+  <img src="../../assets/niuyou10.jpg" alt="">
+  <img src="../../assets/niuyou11.jpg" alt="">
+  <img src="../../assets/niuyou12.jpg" alt="">
+  <img src="../../assets/niuyou13.jpg" alt="">
 
-<ion-content padding>
-  商品列表
 </ion-content>
+<ion-footer style="height: 50px;">
+  <ion-row style="height: 50px;">
+    <ion-col col-4 style="background-color:white;">
+      <a><ion-icon style="font-size: 25px;margin-top: 8px; margin-left: 50px;" name="ios-cart-outline"></ion-icon></a>
+    </ion-col>
+    <ion-col col-4 style="background-color:black;">
+      <a (click)="dianji()" style=" display:block; text-decoration: none;color: white;margin-left: 20px;margin-top: 10px;">加入购物车</a>
+    </ion-col>
+    <ion-col col-4 style="background-color:orangered;" #d1>
+      <a style="display:block; text-decoration: none;color: white;margin-left: 20px;margin-top: 10px;">立即购买</a>
+    </ion-col>
+  </ion-row>
+</ion-footer>

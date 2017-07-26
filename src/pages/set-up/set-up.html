@@ -30,15 +30,60 @@
           接收设备新消息通知
         </ion-col>
 
-        <ion-col class="notic_text" col-2>
+        <ion-col class="notic_text" col-3>
           已关闭
         </ion-col>
+    </ion-row>
 
-       <ion-col class="notic_img" col-1>
-         <img src="../../assets/icon/zuo.png" alt="">
-       </ion-col>
-    </ion-row>
-    <ion-row>
-      <ion-col class="cc_jieshao">日日煮app在运行加载过程中，所产生的图片和视频等缓存，点击清除，让您的手机运行速度加快</ion-col>
-    </ion-row>
+  <ion-row class="notic" style="padding: 0px">
+    <ion-col class="notic_phone" col-9>
+      地域
+    </ion-col>
+    <ion-col class="notic_text" col-3>
+      中国
+    </ion-col>
+  </ion-row>
+
+  <ion-row class="notic" style="padding: 0px">
+    <ion-col class="notic_phone" col-9>
+      多语言
+    </ion-col>
+    <ion-col style="margin-left: 15%;" class="notic_img" col-1>
+      <img src="../../assets/icon/zuo.png" alt="">
+    </ion-col>
+  </ion-row>
+
+  <ion-row class="notic" style="padding: 0px">
+    <ion-col class="notic_phone" col-9>
+      推荐给好友
+    </ion-col>
+    <ion-col style="margin-left: 15%;" class="notic_img" col-1>
+      <img src="../../assets/icon/zuo.png" alt="">
+    </ion-col>
+  </ion-row>
+
+  <ion-row class="notic" style="padding: 0px">
+    <ion-col class="notic_phone" col-9>
+      在线更新
+    </ion-col>
+    <ion-col style="margin-left: 15%;" class="notic_img" col-1>
+      <img src="../../assets/icon/zuo.png" alt="">
+    </ion-col>
+  </ion-row>
+
+  <ion-row class="notic" style="padding: 0px">
+    <ion-col class="notic_phone" col-9>
+      关于日日煮
+    </ion-col>
+    <ion-col style="margin-left: 15%;" class="notic_img" col-1>
+      <img src="../../assets/icon/zuo.png" alt="">
+    </ion-col>
+  </ion-row>
 </ion-content>
+<ion-footer style="height: 50px;background-color:red;">
+  <ion-row>
+    <ion-col col-12 style="padding: 0;">
+      <p (click)="out()" style="margin: 0; text-align: center;line-height: 50px;color: white;">登出</p>
+    </ion-col>
+  </ion-row>
+</ion-footer>

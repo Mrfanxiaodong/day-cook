@@ -40,6 +40,7 @@ import {TouxiangPage} from "../pages/touxiang/touxiang";
 import {GuanzhuPage} from "../pages/guanzhu/guanzhu";
 import {FengchePage} from "../pages/fengche/fengche";
 import {SearchonePage} from "../pages/searchone/searchone";
+import {GouwuchePage} from "../pages/gouwuche/gouwuche";
 
 @NgModule({
   declarations: [
@@ -77,7 +78,8 @@ import {SearchonePage} from "../pages/searchone/searchone";
     AddressPage,
     ProblemPage,
     YijianPage,
-    SearchonePage
+    SearchonePage,
+    GouwuchePage
   ],
   imports: [
     BrowserModule,HttpModule,
@@ -122,7 +124,8 @@ import {SearchonePage} from "../pages/searchone/searchone";
     AddressPage,
     ProblemPage,
     YijianPage,
-    SearchonePage
+    SearchonePage,
+    GouwuchePage
   ],
   providers: [
     StatusBar,
