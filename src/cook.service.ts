@@ -77,5 +77,11 @@ export class CookService{
   bozhu(){
     return this.http.get('http://localhost:3000/shares').map(res=>res.json().data)
   }
-
+  ping(oldid){
+    return this.http.get('http://localhost:3000/dds/pl'+oldid).map(res=>res.json().data)
+  }
+  inpp(pinglun:string,id:string,){
+    return this.http.post('http://localhost:3000/dds/inp',{id,pinglun})
+      .map(res=>{return res.json().data})
+  }
 }

@@ -1,5 +1,6 @@
-import { Component } from '@angular/core';
+import {Component, OnInit} from '@angular/core';
 import { NavController, NavParams } from 'ionic-angular';
+import {CookService} from "../../cook.service";
 
 /**
  * Generated class for the HomeTwoCai2Page page.
@@ -12,14 +13,29 @@ import { NavController, NavParams } from 'ionic-angular';
   selector: 'page-home-two-cai2',
   templateUrl: 'home-two-cai2.html',
 })
-export class HomeTwoCai2Page {
+export class HomeTwoCai2Page implements OnInit{
   caidetail;
-  constructor(public navCtrl: NavController, public navParams: NavParams) {
+  oldid;
+  onlydata;
+  inpvalue;
+  constructor(public navCtrl: NavController, public navParams: NavParams,public cs:CookService) {
     this.caidetail = this.navParams.get('cai');
+    this.oldid=this.caidetail.id;
+    console.log(this.oldid)
   }
 
   ionViewDidLoad() {
     console.log('ionViewDidLoad HomeTwoCai2Page');
   }
+  ngOnInit():void{
+    this.cs.ping(this.oldid).subscribe(data=>{
+      this.onlydata = data;
+    });
 
+  }
+  showPrompt(){
+    this.cs.inpp(this.inpvalue,this.oldid).subscribe(data=>{
+
+    });
+  }
 }
